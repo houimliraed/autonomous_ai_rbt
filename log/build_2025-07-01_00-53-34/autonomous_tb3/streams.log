@@ -1,0 +1,37 @@
+[0.595s] Invoking command in '/home/ray/Desktop/autonomous_tb3_ws/src/autonomous_tb3': PYTHONPATH=/home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autonomous_tb3 build --build-base /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build install --record /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/install.log --single-version-externally-managed install_data
+[0.795s] running egg_info
+[0.796s] creating ../../build/autonomous_tb3/autonomous_tb3.egg-info
+[0.796s] writing ../../build/autonomous_tb3/autonomous_tb3.egg-info/PKG-INFO
+[0.796s] writing dependency_links to ../../build/autonomous_tb3/autonomous_tb3.egg-info/dependency_links.txt
+[0.796s] writing entry points to ../../build/autonomous_tb3/autonomous_tb3.egg-info/entry_points.txt
+[0.796s] writing requirements to ../../build/autonomous_tb3/autonomous_tb3.egg-info/requires.txt
+[0.796s] writing top-level names to ../../build/autonomous_tb3/autonomous_tb3.egg-info/top_level.txt
+[0.796s] writing manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+[0.797s] reading manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+[0.798s] writing manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+[0.798s] running build
+[0.798s] running build_py
+[0.798s] creating /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build
+[0.798s] creating /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib
+[0.798s] creating /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3
+[0.799s] copying autonomous_tb3/occupancy_grid_pub.py -> /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3
+[0.799s] copying autonomous_tb3/__init__.py -> /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3
+[0.799s] running install
+[0.799s] running install_lib
+[0.800s] creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3
+[0.800s] copying /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3/occupancy_grid_pub.py -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3
+[0.800s] copying /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3/__init__.py -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3
+[0.800s] byte-compiling /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3/occupancy_grid_pub.py to occupancy_grid_pub.cpython-310.pyc
+[0.800s] byte-compiling /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3/__init__.py to __init__.cpython-310.pyc
+[0.800s] running install_data
+[0.801s] creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index
+[0.801s] creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index/resource_index
+[0.801s] creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index/resource_index/packages
+[0.801s] copying resource/autonomous_tb3 -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index/resource_index/packages
+[0.801s] copying package.xml -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/autonomous_tb3
+[0.801s] running install_egg_info
+[0.803s] Copying ../../build/autonomous_tb3/autonomous_tb3.egg-info to /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info
+[0.804s] running install_scripts
+[0.829s] Installing occupancy_grid_pub script to /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3
+[0.830s] writing list of installed files to '/home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/install.log'
+[0.852s] Invoked command in '/home/ray/Desktop/autonomous_tb3_ws/src/autonomous_tb3' returned '0': PYTHONPATH=/home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autonomous_tb3 build --build-base /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build install --record /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/install.log --single-version-externally-managed install_data

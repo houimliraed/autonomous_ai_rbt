@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/autonomous_tb3/autonomous_tb3.egg-info
+writing ../../build/autonomous_tb3/autonomous_tb3.egg-info/PKG-INFO
+writing dependency_links to ../../build/autonomous_tb3/autonomous_tb3.egg-info/dependency_links.txt
+writing entry points to ../../build/autonomous_tb3/autonomous_tb3.egg-info/entry_points.txt
+writing requirements to ../../build/autonomous_tb3/autonomous_tb3.egg-info/requires.txt
+writing top-level names to ../../build/autonomous_tb3/autonomous_tb3.egg-info/top_level.txt
+writing manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+reading manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+writing manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build
+creating /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib
+creating /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3
+copying autonomous_tb3/occupancy_grid_pub.py -> /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3
+copying autonomous_tb3/__init__.py -> /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3
+running install
+running install_lib
+creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3
+copying /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3/occupancy_grid_pub.py -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3
+copying /home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/build/lib/autonomous_tb3/__init__.py -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3
+byte-compiling /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3/occupancy_grid_pub.py to occupancy_grid_pub.cpython-310.pyc
+byte-compiling /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index
+creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index/resource_index
+creating /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index/resource_index/packages
+copying resource/autonomous_tb3 -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/ament_index/resource_index/packages
+copying package.xml -> /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/share/autonomous_tb3
+running install_egg_info
+Copying ../../build/autonomous_tb3/autonomous_tb3.egg-info to /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info
+running install_scripts
+Installing occupancy_grid_pub script to /home/ray/Desktop/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3
+writing list of installed files to '/home/ray/Desktop/autonomous_tb3_ws/build/autonomous_tb3/install.log'

@@ -1,0 +1,3 @@
+[console_scripts]
+occupancy_grid_pub = autonomous_tb3.occupancy_grid_pub:main
+

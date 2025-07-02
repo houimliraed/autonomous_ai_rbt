@@ -11,7 +11,11 @@ setup.py
 autonomous_tb3/__init__.py
 autonomous_tb3/occupancy_grid_pub.py
 config/tb3_cartographer.lua
+config/tb3_nav_params.yaml
+config/tb3_world.pgm
+config/tb3_world.yaml
 launch/mapping.launch.py
+launch/navigation.launch.py
 myfiles/KeyboardTeleop.py
 myfiles/__init__.py
 resource/autonomous_tb3

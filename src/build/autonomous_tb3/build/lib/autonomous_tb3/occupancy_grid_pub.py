@@ -47,7 +47,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     OG_publisher = Occupancy_grid_pub()
-    print("Publishing Map ")
+    print("Publishing Map")
     rclpy.spin(OG_publisher)
     OG_publisher.destroy_node()
     rclpy.shutdown()

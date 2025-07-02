@@ -10,6 +10,10 @@ setup.py
 ../../build/autonomous_tb3/autonomous_tb3.egg-info/zip-safe
 autonomous_tb3/__init__.py
 autonomous_tb3/occupancy_grid_pub.py
+config/tb3_cartographer.lua
+launch/mapping.launch.py
+myfiles/KeyboardTeleop.py
+myfiles/__init__.py
 resource/autonomous_tb3
 test/test_copyright.py
 test/test_flake8.py

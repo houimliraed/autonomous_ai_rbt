@@ -1,4 +1,7 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
+
 
 package_name = 'autonomous_tb3'
 
@@ -10,6 +13,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share',package_name,'launch') , glob('launch/*')),
+        (os.path.join('share',package_name,'config') , glob('config/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -21,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'occupancy_grid_pub = autonomous_tb3.occupancy_grid_pub:main',
+            'KeyboardTeleop = autonomous_tb3.myfiles.KeyboardTeleop:main'
         ],
     },
 )

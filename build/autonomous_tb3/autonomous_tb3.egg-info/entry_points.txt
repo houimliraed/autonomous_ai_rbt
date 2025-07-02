@@ -1,3 +1,4 @@
 [console_scripts]
+KeyboardTeleop = autonomous_tb3.myfiles.KeyboardTeleop:main
 occupancy_grid_pub = autonomous_tb3.occupancy_grid_pub:main
 

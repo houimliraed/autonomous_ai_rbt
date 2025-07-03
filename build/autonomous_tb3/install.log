@@ -21,5 +21,6 @@
 /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info/requires.txt
 /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info/zip-safe
 /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info/entry_points.txt
-/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3/KeyboardTeleop
+/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3/maze_solver
 /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3/occupancy_grid_pub
+/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3/sdf_spawner

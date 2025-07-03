@@ -26,7 +26,8 @@ setup(
     entry_points={
         'console_scripts': [
             'occupancy_grid_pub = autonomous_tb3.occupancy_grid_pub:main',
-            'KeyboardTeleop = autonomous_tb3.myfiles.KeyboardTeleop:main'
+            'sdf_spawner = autonomous_tb3.spawn_entity:main',
+            'maze_solver = autonomous_tb3.maze_solver:main',
         ],
     },
 )

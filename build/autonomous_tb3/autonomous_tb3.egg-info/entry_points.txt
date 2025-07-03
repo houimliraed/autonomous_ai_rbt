@@ -1,4 +1,5 @@
 [console_scripts]
-KeyboardTeleop = autonomous_tb3.myfiles.KeyboardTeleop:main
+maze_solver = autonomous_tb3.maze_solver:main
 occupancy_grid_pub = autonomous_tb3.occupancy_grid_pub:main
+sdf_spawner = autonomous_tb3.spawn_entity:main
 

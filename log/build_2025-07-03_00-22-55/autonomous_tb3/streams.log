@@ -1,0 +1,23 @@
+[0.436s] Invoking command in '/home/ray/autonomous_tb3_ws/src/autonomous_tb3': PYTHONPATH=/home/ray/autonomous_tb3_ws/build/autonomous_tb3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autonomous_tb3 build --build-base /home/ray/autonomous_tb3_ws/build/autonomous_tb3/build install --record /home/ray/autonomous_tb3_ws/build/autonomous_tb3/install.log --single-version-externally-managed install_data
+[0.600s] running egg_info
+[0.600s] writing ../../build/autonomous_tb3/autonomous_tb3.egg-info/PKG-INFO
+[0.601s] writing dependency_links to ../../build/autonomous_tb3/autonomous_tb3.egg-info/dependency_links.txt
+[0.601s] writing entry points to ../../build/autonomous_tb3/autonomous_tb3.egg-info/entry_points.txt
+[0.601s] writing requirements to ../../build/autonomous_tb3/autonomous_tb3.egg-info/requires.txt
+[0.601s] writing top-level names to ../../build/autonomous_tb3/autonomous_tb3.egg-info/top_level.txt
+[0.602s] reading manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+[0.602s] writing manifest file '../../build/autonomous_tb3/autonomous_tb3.egg-info/SOURCES.txt'
+[0.603s] running build
+[0.603s] running build_py
+[0.603s] running install
+[0.603s] running install_lib
+[0.604s] running install_data
+[0.604s] copying config/tb3_nav_params.yaml -> /home/ray/autonomous_tb3_ws/install/autonomous_tb3/share/autonomous_tb3/config
+[0.604s] running install_egg_info
+[0.605s] removing '/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info' (and everything under it)
+[0.605s] Copying ../../build/autonomous_tb3/autonomous_tb3.egg-info to /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages/autonomous_tb3-0.0.0-py3.10.egg-info
+[0.606s] running install_scripts
+[0.621s] Installing KeyboardTeleop script to /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3
+[0.622s] Installing occupancy_grid_pub script to /home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/autonomous_tb3
+[0.622s] writing list of installed files to '/home/ray/autonomous_tb3_ws/build/autonomous_tb3/install.log'
+[0.638s] Invoked command in '/home/ray/autonomous_tb3_ws/src/autonomous_tb3' returned '0': PYTHONPATH=/home/ray/autonomous_tb3_ws/build/autonomous_tb3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autonomous_tb3 build --build-base /home/ray/autonomous_tb3_ws/build/autonomous_tb3/build install --record /home/ray/autonomous_tb3_ws/build/autonomous_tb3/install.log --single-version-externally-managed install_data

@@ -1,0 +1,28 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ray/autonomous_robot/install/myamr_files/lib/python3.10/site-packages",
+        "/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages",
+        "/home/ray/turtlebot3_ws/build/turtlebot3_teleop",
+        "/home/ray/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/ray/turtlebot3_ws/build/turtlebot3_example",
+        "/home/ray/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/ray/turtlebot3_ws/build/my_robot_test",
+        "/home/ray/turtlebot3_ws/install/my_robot_test/lib/python3.10/site-packages",
+        "/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ray/autonomous_robot/install/myamr_files/lib/python3.10/site-packages",
+        "/home/ray/autonomous_tb3_ws/install/autonomous_tb3/lib/python3.10/site-packages",
+        "/home/ray/turtlebot3_ws/build/turtlebot3_teleop",
+        "/home/ray/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/ray/turtlebot3_ws/build/turtlebot3_example",
+        "/home/ray/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/ray/turtlebot3_ws/build/my_robot_test",
+        "/home/ray/turtlebot3_ws/install/my_robot_test/lib/python3.10/site-packages",
+        "/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

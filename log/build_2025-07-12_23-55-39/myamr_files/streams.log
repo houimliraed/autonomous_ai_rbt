@@ -1,0 +1,20 @@
+[0.457s] Invoking command in '/home/ray/autonomous_robot/src/myamr_files': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_files/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myamr_files build --build-base /home/ray/autonomous_robot/build/myamr_files/build install --record /home/ray/autonomous_robot/build/myamr_files/install.log --single-version-externally-managed install_data
+[0.652s] running egg_info
+[0.653s] writing ../../build/myamr_files/myamr_files.egg-info/PKG-INFO
+[0.653s] writing dependency_links to ../../build/myamr_files/myamr_files.egg-info/dependency_links.txt
+[0.653s] writing entry points to ../../build/myamr_files/myamr_files.egg-info/entry_points.txt
+[0.653s] writing requirements to ../../build/myamr_files/myamr_files.egg-info/requires.txt
+[0.654s] writing top-level names to ../../build/myamr_files/myamr_files.egg-info/top_level.txt
+[0.655s] reading manifest file '../../build/myamr_files/myamr_files.egg-info/SOURCES.txt'
+[0.656s] writing manifest file '../../build/myamr_files/myamr_files.egg-info/SOURCES.txt'
+[0.656s] running build
+[0.656s] running build_py
+[0.656s] running install
+[0.656s] running install_lib
+[0.657s] running install_data
+[0.657s] running install_egg_info
+[0.659s] removing '/home/ray/autonomous_robot/install/myamr_files/lib/python3.10/site-packages/myamr_files-0.0.0-py3.10.egg-info' (and everything under it)
+[0.660s] Copying ../../build/myamr_files/myamr_files.egg-info to /home/ray/autonomous_robot/install/myamr_files/lib/python3.10/site-packages/myamr_files-0.0.0-py3.10.egg-info
+[0.660s] running install_scripts
+[0.680s] writing list of installed files to '/home/ray/autonomous_robot/build/myamr_files/install.log'
+[0.706s] Invoked command in '/home/ray/autonomous_robot/src/myamr_files' returned '0': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_files/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myamr_files build --build-base /home/ray/autonomous_robot/build/myamr_files/build install --record /home/ray/autonomous_robot/build/myamr_files/install.log --single-version-externally-managed install_data

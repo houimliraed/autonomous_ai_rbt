@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/myrobot_controller/myrobot_controller.egg-info
+writing ../../build/myrobot_controller/myrobot_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/myrobot_controller/myrobot_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/myrobot_controller/myrobot_controller.egg-info/entry_points.txt
+writing requirements to ../../build/myrobot_controller/myrobot_controller.egg-info/requires.txt
+writing top-level names to ../../build/myrobot_controller/myrobot_controller.egg-info/top_level.txt
+writing manifest file '../../build/myrobot_controller/myrobot_controller.egg-info/SOURCES.txt'
+reading manifest file '../../build/myrobot_controller/myrobot_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/myrobot_controller/myrobot_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ray/autonomous_robot/build/myrobot_controller/build
+creating /home/ray/autonomous_robot/build/myrobot_controller/build/lib
+creating /home/ray/autonomous_robot/build/myrobot_controller/build/lib/myrobot_controller
+copying myrobot_controller/__init__.py -> /home/ray/autonomous_robot/build/myrobot_controller/build/lib/myrobot_controller
+running install
+running install_lib
+creating /home/ray/autonomous_robot/install/myrobot_controller/lib/python3.10/site-packages/myrobot_controller
+copying /home/ray/autonomous_robot/build/myrobot_controller/build/lib/myrobot_controller/__init__.py -> /home/ray/autonomous_robot/install/myrobot_controller/lib/python3.10/site-packages/myrobot_controller
+byte-compiling /home/ray/autonomous_robot/install/myrobot_controller/lib/python3.10/site-packages/myrobot_controller/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index
+creating /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index/resource_index
+creating /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index/resource_index/packages
+copying resource/myrobot_controller -> /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller
+running install_egg_info
+Copying ../../build/myrobot_controller/myrobot_controller.egg-info to /home/ray/autonomous_robot/install/myrobot_controller/lib/python3.10/site-packages/myrobot_controller-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ray/autonomous_robot/build/myrobot_controller/install.log'

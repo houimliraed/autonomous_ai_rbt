@@ -1,0 +1,36 @@
+Built target ament_cmake_python_copy_myrobot_utils
+running egg_info
+writing myrobot_utils.egg-info/PKG-INFO
+writing dependency_links to myrobot_utils.egg-info/dependency_links.txt
+writing top-level names to myrobot_utils.egg-info/top_level.txt
+reading manifest file 'myrobot_utils.egg-info/SOURCES.txt'
+writing manifest file 'myrobot_utils.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_myrobot_utils_egg
+-- Install configuration: ""
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/pythonpath.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/pythonpath.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info
+-- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils/safety_stop.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils/__init__.py
+Listing '/home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils'...
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/lib/myrobot_utils/safety_stop.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/ament_index/resource_index/package_run_dependencies/myrobot_utils
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/ament_index/resource_index/parent_prefix_path/myrobot_utils
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/path.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/path.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.bash
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.zsh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.dsv
+-- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/package.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/ament_index/resource_index/packages/myrobot_utils
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/cmake/myrobot_utilsConfig.cmake
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/cmake/myrobot_utilsConfig-version.cmake
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/package.xml

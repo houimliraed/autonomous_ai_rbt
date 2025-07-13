@@ -1,0 +1,29 @@
+[0.036s] Invoking command in '/home/ray/autonomous_robot/build/myrobot_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/autonomous_robot/src/myrobot_utils -DCMAKE_INSTALL_PREFIX=/home/ray/autonomous_robot/install/myrobot_utils
+[0.047s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.249s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.279s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.281s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.287s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.298s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.311s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.345s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.347s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.498s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.579s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.579s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.602s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.629s] -- Found twist_mux_msgs: 3.0.1 (/opt/ros/humble/share/twist_mux_msgs/cmake)
+[0.681s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.692s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.807s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.808s]   ament_package_xml() package name 'myrobot_utils' in '/package.xml' does not
+[0.808s]   match current PROJECT_NAME 'bumperbot_utils'.  You must call project() with
+[0.808s]   the same package name before.
+[0.808s] Call Stack (most recent call first):
+[0.808s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:60 (ament_package_xml)
+[0.808s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[0.808s]   CMakeLists.txt:23 (ament_python_install_package)
+[0.808s] 
+[0.808s] [0m
+[0.812s] -- Configuring incomplete, errors occurred!
+[0.812s] See also "/home/ray/autonomous_robot/build/myrobot_utils/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3575c7cbea04a9912e1b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "myrobot_localization",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_myrobot_localization_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_myrobot_localization_egg-c438f07403b0d06f901b.json",
+					"name" : "ament_cmake_python_build_myrobot_localization_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_myrobot_localization::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_myrobot_localization-ec7536c7a87339e7a593.json",
+					"name" : "ament_cmake_python_copy_myrobot_localization",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "myrobot_localization_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-myrobot_localization_uninstall-1654d62098565efa22e8.json",
+					"name" : "myrobot_localization_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-de644ebed1ee7f6c8fca.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ray/autonomous_robot/build/myrobot_localization",
+		"source" : "/home/ray/autonomous_robot/src/myrobot_localization"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

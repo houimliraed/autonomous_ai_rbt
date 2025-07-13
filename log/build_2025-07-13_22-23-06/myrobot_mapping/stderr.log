@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:29 (install):
+  install TARGETS given target "mapping_with_known_poses" which does not
+  exist.
+
+[0m

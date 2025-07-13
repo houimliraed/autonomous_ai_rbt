@@ -1,0 +1,26 @@
+Built target ament_cmake_python_copy_myrobot_controller
+running egg_info
+writing myrobot_controller.egg-info/PKG-INFO
+writing dependency_links to myrobot_controller.egg-info/dependency_links.txt
+writing top-level names to myrobot_controller.egg-info/top_level.txt
+reading manifest file 'myrobot_controller.egg-info/SOURCES.txt'
+writing manifest file 'myrobot_controller.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_myrobot_controller_egg
+-- Install configuration: ""
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/pythonpath.sh
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/pythonpath.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/simple_controller.py
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/twist_relay.py
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/noisy_controller.py
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/__init__.py
+Listing '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller'...
+Compiling '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/__init__.py'...
+Compiling '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/noisy_controller.py'...
+Compiling '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/simple_controller.py'...
+Compiling '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/twist_relay.py'...

@@ -2,6 +2,7 @@ setup.py
 myrobot_controller/__init__.py
 myrobot_controller/noisy_controller.py
 myrobot_controller/simple_controller.py
+myrobot_controller/twist_relay.py
 myrobot_controller.egg-info/PKG-INFO
 myrobot_controller.egg-info/SOURCES.txt
 myrobot_controller.egg-info/dependency_links.txt

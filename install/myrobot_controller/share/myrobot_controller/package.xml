@@ -2,10 +2,10 @@
 <package format="3">
   <name>myrobot_controller</name>
   <version>0.0.0</version>
-  <description>The myrobot package</description>
-  <maintainer email="houimliraed@outlook.fr">Houimli Raed</maintainer>
+  <description>The myrobot_controller package</description>
+  <maintainer email="houimliraed@outlook.fr">Antonio Brandi</maintainer>
   <license>Apache 2.0</license>
-  <author email="houimliraed@outlook.fr">Houimli Raed</author>
+  <author email="houimliraed@outlook.fr">Antonio Brandi</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_python</buildtool_depend>
@@ -28,6 +28,8 @@
   <exec_depend>joy</exec_depend>
   <exec_depend>joy_teleop</exec_depend>
   <exec_depend>ros2_controllers</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+  <exec_depend>twist_mux</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

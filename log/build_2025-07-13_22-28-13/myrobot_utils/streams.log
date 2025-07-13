@@ -1,0 +1,42 @@
+[0.036s] Invoking command in '/home/ray/autonomous_robot/build/myrobot_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myrobot_utils -- -j8 -l8
+[0.116s] Built target ament_cmake_python_copy_myrobot_utils
+[0.491s] running egg_info
+[0.492s] writing myrobot_utils.egg-info/PKG-INFO
+[0.492s] writing dependency_links to myrobot_utils.egg-info/dependency_links.txt
+[0.493s] writing top-level names to myrobot_utils.egg-info/top_level.txt
+[0.496s] reading manifest file 'myrobot_utils.egg-info/SOURCES.txt'
+[0.497s] writing manifest file 'myrobot_utils.egg-info/SOURCES.txt'
+[0.537s] Built target ament_cmake_python_build_myrobot_utils_egg
+[0.551s] Invoked command in '/home/ray/autonomous_robot/build/myrobot_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myrobot_utils -- -j8 -l8
+[0.553s] Invoking command in '/home/ray/autonomous_robot/build/myrobot_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myrobot_utils
+[0.560s] -- Install configuration: ""
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/pythonpath.sh
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/pythonpath.dsv
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/PKG-INFO
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils-0.0.0-py3.10.egg-info/top_level.txt
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils
+[0.561s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils/safety_stop.py
+[0.562s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils/__init__.py
+[0.606s] Listing '/home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils'...
+[0.606s] Compiling '/home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils/__init__.py'...
+[0.606s] Compiling '/home/ray/autonomous_robot/install/myrobot_utils/local/lib/python3.10/dist-packages/myrobot_utils/safety_stop.py'...
+[0.613s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/lib/myrobot_utils/safety_stop.py
+[0.615s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/ament_index/resource_index/package_run_dependencies/myrobot_utils
+[0.615s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/ament_index/resource_index/parent_prefix_path/myrobot_utils
+[0.615s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/ament_prefix_path.sh
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/ament_prefix_path.dsv
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/path.sh
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/environment/path.dsv
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.bash
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.sh
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.zsh
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/local_setup.dsv
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/package.dsv
+[0.616s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/ament_index/resource_index/packages/myrobot_utils
+[0.617s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/cmake/myrobot_utilsConfig.cmake
+[0.617s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/cmake/myrobot_utilsConfig-version.cmake
+[0.617s] -- Installing: /home/ray/autonomous_robot/install/myrobot_utils/share/myrobot_utils/package.xml
+[0.618s] Invoked command in '/home/ray/autonomous_robot/build/myrobot_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myrobot_utils

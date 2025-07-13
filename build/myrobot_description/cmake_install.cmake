@@ -46,8 +46,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/myrobot_description" TYPE DIRECTORY FILES
     "/home/ray/autonomous_robot/src/myrobot_description/launch"
     "/home/ray/autonomous_robot/src/myrobot_description/meshes"
+    "/home/ray/autonomous_robot/src/myrobot_description/models"
+    "/home/ray/autonomous_robot/src/myrobot_description/photos"
     "/home/ray/autonomous_robot/src/myrobot_description/urdf"
     "/home/ray/autonomous_robot/src/myrobot_description/rviz"
+    "/home/ray/autonomous_robot/src/myrobot_description/worlds"
     )
 endif()
 

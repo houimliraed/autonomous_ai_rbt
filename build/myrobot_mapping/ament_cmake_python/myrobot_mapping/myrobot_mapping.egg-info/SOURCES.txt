@@ -1,0 +1,7 @@
+setup.py
+myrobot_mapping/__init__.py
+myrobot_mapping/mapping_with_known_poses.py
+myrobot_mapping.egg-info/PKG-INFO
+myrobot_mapping.egg-info/SOURCES.txt
+myrobot_mapping.egg-info/dependency_links.txt
+myrobot_mapping.egg-info/top_level.txt

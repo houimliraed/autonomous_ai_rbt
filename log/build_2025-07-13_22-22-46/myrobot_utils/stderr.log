@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+  ament_python_install_package() the Python package folder
+  '/home/ray/autonomous_robot/src/myrobot_utils/myrobot_utils' doesn't
+  contain an '__init__.py' file
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+  CMakeLists.txt:22 (ament_python_install_package)
+
+[0m

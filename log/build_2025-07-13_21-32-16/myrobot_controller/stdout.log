@@ -1,0 +1,10 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[ 25%] Built target ament_cmake_python_copy_myrobot_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/noisy_controller.dir/src/noisy_controller.cpp.o[0m
+running egg_info
+writing myrobot_controller.egg-info/PKG-INFO
+writing dependency_links to myrobot_controller.egg-info/dependency_links.txt
+writing top-level names to myrobot_controller.egg-info/top_level.txt
+reading manifest file 'myrobot_controller.egg-info/SOURCES.txt'
+writing manifest file 'myrobot_controller.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_myrobot_controller_egg

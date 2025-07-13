@@ -1,0 +1,104 @@
+[0.028s] Invoking command in '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/bumperbot_mapping -DCMAKE_INSTALL_PREFIX=/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping
+[0.390s] -- The C compiler identification is GNU 11.4.0
+[0.391s] -- The CXX compiler identification is GNU 11.4.0
+[0.391s] -- Detecting C compiler ABI info
+[0.391s] -- Detecting C compiler ABI info - done
+[0.391s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.391s] -- Detecting C compile features
+[0.392s] -- Detecting C compile features - done
+[0.392s] -- Detecting CXX compiler ABI info
+[0.392s] -- Detecting CXX compiler ABI info - done
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.392s] -- Detecting CXX compile features
+[0.392s] -- Detecting CXX compile features - done
+[0.392s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.558s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.696s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.780s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.788s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.801s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.830s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.865s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.955s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.959s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.062s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.103s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.169s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.189s] -- Looking for pthread.h
+[1.285s] -- Looking for pthread.h - found
+[1.286s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.377s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.379s] -- Found Threads: TRUE  
+[1.462s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[1.465s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.514s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.541s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.917s] -- Configuring done
+[1.933s] -- Generating done
+[1.941s] -- Build files have been written to: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping
+[1.958s] Invoked command in '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/bumperbot_mapping -DCMAKE_INSTALL_PREFIX=/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping
+[1.960s] Invoking command in '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping -- -j8 -l8
+[2.059s] [ 50%] [32mBuilding CXX object CMakeFiles/mapping_with_known_poses.dir/src/mapping_with_known_poses.cpp.o[0m
+[2.089s] [ 50%] Built target ament_cmake_python_copy_bumperbot_mapping
+[2.694s] running egg_info
+[2.694s] creating bumperbot_mapping.egg-info
+[2.694s] writing bumperbot_mapping.egg-info/PKG-INFO
+[2.694s] writing dependency_links to bumperbot_mapping.egg-info/dependency_links.txt
+[2.695s] writing top-level names to bumperbot_mapping.egg-info/top_level.txt
+[2.695s] writing manifest file 'bumperbot_mapping.egg-info/SOURCES.txt'
+[2.699s] reading manifest file 'bumperbot_mapping.egg-info/SOURCES.txt'
+[2.699s] writing manifest file 'bumperbot_mapping.egg-info/SOURCES.txt'
+[2.739s] [ 50%] Built target ament_cmake_python_build_bumperbot_mapping_egg
+[20.135s] [100%] [32m[1mLinking CXX executable mapping_with_known_poses[0m
+[20.866s] [100%] Built target mapping_with_known_poses
+[20.887s] Invoked command in '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping -- -j8 -l8
+[20.890s] Invoking command in '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping
+[20.903s] -- Install configuration: ""
+[20.903s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/environment/pythonpath.sh
+[20.904s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/environment/pythonpath.dsv
+[20.904s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping-0.0.0-py3.10.egg-info
+[20.905s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping-0.0.0-py3.10.egg-info/SOURCES.txt
+[20.905s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping-0.0.0-py3.10.egg-info/PKG-INFO
+[20.906s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping-0.0.0-py3.10.egg-info/dependency_links.txt
+[20.906s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping-0.0.0-py3.10.egg-info/top_level.txt
+[20.907s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping
+[20.907s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping/mapping_with_known_poses.py
+[20.908s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping/__init__.py
+[21.000s] Listing '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping'...
+[21.000s] Compiling '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping/__init__.py'...
+[21.000s] Compiling '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/local/lib/python3.10/dist-packages/bumperbot_mapping/mapping_with_known_poses.py'...
+[21.007s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/include/include
+[21.007s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/include/include/bumperbot_mapping
+[21.007s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/include/include/bumperbot_mapping/mapping_with_known_poses.hpp
+[21.008s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/lib/bumperbot_mapping/mapping_with_known_poses
+[21.012s] -- Set runtime path of "/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/lib/bumperbot_mapping/mapping_with_known_poses" to ""
+[21.012s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/config
+[21.012s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/config/slam_toolbox.yaml
+[21.012s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/launch
+[21.012s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/launch/slam.launch.py
+[21.012s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps
+[21.012s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps/small_house
+[21.013s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps/small_house/map.pgm
+[21.014s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps/small_house/map.yaml
+[21.014s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps/small_warehouse
+[21.014s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps/small_warehouse/map.pgm
+[21.015s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/maps/small_warehouse/map.yaml
+[21.015s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/rviz
+[21.015s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/rviz/slam.rviz
+[21.015s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/lib/bumperbot_mapping/mapping_with_known_poses.py
+[21.016s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/ament_index/resource_index/package_run_dependencies/bumperbot_mapping
+[21.016s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/ament_index/resource_index/parent_prefix_path/bumperbot_mapping
+[21.017s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/environment/ament_prefix_path.sh
+[21.017s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/environment/ament_prefix_path.dsv
+[21.018s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/environment/path.sh
+[21.018s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/environment/path.dsv
+[21.018s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/local_setup.bash
+[21.018s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/local_setup.sh
+[21.019s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/local_setup.zsh
+[21.019s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/local_setup.dsv
+[21.019s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/package.dsv
+[21.019s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/ament_index/resource_index/packages/bumperbot_mapping
+[21.020s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/cmake/bumperbot_mappingConfig.cmake
+[21.020s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/cmake/bumperbot_mappingConfig-version.cmake
+[21.020s] -- Installing: /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/install/bumperbot_mapping/share/bumperbot_mapping/package.xml
+[21.024s] Invoked command in '/home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization/Section10_SLAM/bumperbot_ws/src/build/bumperbot_mapping

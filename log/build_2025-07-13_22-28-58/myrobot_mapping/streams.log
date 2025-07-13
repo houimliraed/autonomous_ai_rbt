@@ -1,0 +1,34 @@
+[0.029s] Invoking command in '/home/ray/autonomous_robot/build/myrobot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myrobot_mapping -- -j8 -l8
+[0.089s] Built target ament_cmake_python_copy_myrobot_mapping
+[0.507s] running egg_info
+[0.507s] creating myrobot_mapping.egg-info
+[0.507s] writing myrobot_mapping.egg-info/PKG-INFO
+[0.507s] writing dependency_links to myrobot_mapping.egg-info/dependency_links.txt
+[0.507s] writing top-level names to myrobot_mapping.egg-info/top_level.txt
+[0.507s] writing manifest file 'myrobot_mapping.egg-info/SOURCES.txt'
+[0.508s] reading manifest file 'myrobot_mapping.egg-info/SOURCES.txt'
+[0.509s] writing manifest file 'myrobot_mapping.egg-info/SOURCES.txt'
+[0.545s] Built target ament_cmake_python_build_myrobot_mapping_egg
+[0.561s] Invoked command in '/home/ray/autonomous_robot/build/myrobot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myrobot_mapping -- -j8 -l8
+[0.563s] Invoking command in '/home/ray/autonomous_robot/build/myrobot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myrobot_mapping
+[0.571s] -- Install configuration: ""
+[0.571s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/share/myrobot_mapping/environment/pythonpath.sh
+[0.571s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/share/myrobot_mapping/environment/pythonpath.dsv
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping-0.0.0-py3.10.egg-info
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping-0.0.0-py3.10.egg-info/PKG-INFO
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping-0.0.0-py3.10.egg-info/top_level.txt
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping
+[0.572s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping/mapping_with_known_poses.py
+[0.573s] -- Installing: /home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping/__init__.py
+[0.613s] Listing '/home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping'...
+[0.614s] Compiling '/home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping/__init__.py'...
+[0.614s] Compiling '/home/ray/autonomous_robot/install/myrobot_mapping/local/lib/python3.10/dist-packages/myrobot_mapping/mapping_with_known_poses.py'...
+[0.620s] [31mCMake Error at cmake_install.cmake:70 (file):
+[0.620s]   file INSTALL cannot find
+[0.620s]   "/home/ray/autonomous_robot/src/myrobot_mapping/include": No such file or
+[0.620s]   directory.
+[0.620s] 
+[0.620s] [0m
+[0.623s] Invoked command in '/home/ray/autonomous_robot/build/myrobot_mapping' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_files:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myrobot_mapping

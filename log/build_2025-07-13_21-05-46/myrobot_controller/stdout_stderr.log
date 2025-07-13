@@ -1,0 +1,54 @@
+[ 25%] Built target ament_cmake_python_copy_myrobot_controller
+[ 50%] Built target simple_controller
+[100%] Built target noisy_controller
+running egg_info
+writing myrobot_controller.egg-info/PKG-INFO
+writing dependency_links to myrobot_controller.egg-info/dependency_links.txt
+writing top-level names to myrobot_controller.egg-info/top_level.txt
+reading manifest file 'myrobot_controller.egg-info/SOURCES.txt'
+writing manifest file 'myrobot_controller.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_myrobot_controller_egg
+-- Install configuration: ""
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/pythonpath.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/pythonpath.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/simple_controller.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/noisy_controller.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/__init__.py
+Listing '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller'...
+Compiling '/home/ray/autonomous_robot/install/myrobot_controller/local/lib/python3.10/dist-packages/myrobot_controller/simple_controller.py'...
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/include/include
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/include/include/bumperbot_controller
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/include/include/bumperbot_controller/noisy_controller.hpp
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/include/include/bumperbot_controller/simple_controller.hpp
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/lib/myrobot_controller/simple_controller
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/lib/myrobot_controller/noisy_controller
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/launch
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/launch/joystick_teleop.launch.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/launch/controller.launch.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/config
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/config/joy_teleop.yaml
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/config/joy_config.yaml
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/config/bumperbot_controllers.yaml
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/lib/myrobot_controller/simple_controller.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/lib/myrobot_controller/noisy_controller.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index/resource_index/package_run_dependencies/myrobot_controller
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index/resource_index/parent_prefix_path/myrobot_controller
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/path.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/environment/path.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/local_setup.bash
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/local_setup.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/local_setup.zsh
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/local_setup.dsv
+-- Installing: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/package.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/ament_index/resource_index/packages/myrobot_controller
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/cmake/myrobot_controllerConfig.cmake
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/cmake/myrobot_controllerConfig-version.cmake
+-- Up-to-date: /home/ray/autonomous_robot/install/myrobot_controller/share/myrobot_controller/package.xml

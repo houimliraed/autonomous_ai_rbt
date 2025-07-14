@@ -1,0 +1,14 @@
+source;share/myamr_localization/hook/cmake_prefix_path.ps1
+source;share/myamr_localization/hook/cmake_prefix_path.dsv
+source;share/myamr_localization/hook/cmake_prefix_path.sh
+source;share/myamr_localization/hook/path.ps1
+source;share/myamr_localization/hook/path.dsv
+source;share/myamr_localization/hook/path.sh
+source;share/myamr_localization/hook/pythonscriptspath.ps1
+source;share/myamr_localization/hook/pythonscriptspath.dsv
+source;share/myamr_localization/hook/pythonscriptspath.sh
+source;share/myamr_localization/local_setup.bash
+source;share/myamr_localization/local_setup.dsv
+source;share/myamr_localization/local_setup.ps1
+source;share/myamr_localization/local_setup.sh
+source;share/myamr_localization/local_setup.zsh

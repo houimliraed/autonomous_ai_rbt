@@ -1,8 +1,0 @@
-[31mCMake Error at CMakeLists.txt:29 (install):
-  install TARGETS given target "odometry_motion_model" which does not exist.
-
-[0m
-[31mCMake Error at CMakeLists.txt:36 (install):
-  install TARGETS given target "kalman_filter" which does not exist.
-
-[0m

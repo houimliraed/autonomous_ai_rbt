@@ -1,0 +1,119 @@
+[0.015s] Invoking command in '/home/ray/autonomous_robot/build/myamr_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/autonomous_robot/myamr_localization -DCMAKE_INSTALL_PREFIX=/home/ray/autonomous_robot/install/myamr_localization
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.094s] -- The CXX compiler identification is GNU 11.4.0
+[0.099s] -- Detecting C compiler ABI info
+[0.149s] -- Detecting C compiler ABI info - done
+[0.154s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.154s] -- Detecting C compile features
+[0.155s] -- Detecting C compile features - done
+[0.157s] -- Detecting CXX compiler ABI info
+[0.215s] -- Detecting CXX compiler ABI info - done
+[0.225s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.225s] -- Detecting CXX compile features
+[0.226s] -- Detecting CXX compile features - done
+[0.229s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.349s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.445s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.484s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.489s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.496s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.507s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.521s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.557s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.560s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.626s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.649s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.683s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.691s] -- Looking for pthread.h
+[0.746s] -- Looking for pthread.h - found
+[0.746s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.808s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.809s] -- Found Threads: TRUE  
+[0.858s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.859s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.883s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.896s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[1.027s] -- Configuring done
+[1.038s] -- Generating done
+[1.042s] -- Build files have been written to: /home/ray/autonomous_robot/build/myamr_localization
+[1.050s] Invoked command in '/home/ray/autonomous_robot/build/myamr_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/autonomous_robot/myamr_localization -DCMAKE_INSTALL_PREFIX=/home/ray/autonomous_robot/install/myamr_localization
+[1.051s] Invoking command in '/home/ray/autonomous_robot/build/myamr_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_localization -- -j8 -l8
+[1.090s] [ 33%] [32mBuilding CXX object CMakeFiles/imu_republisher.dir/src/imu_republisher.cpp.o[0m
+[1.090s] [ 33%] [32mBuilding CXX object CMakeFiles/odometry_motion_model.dir/src/odometry_motion_model.cpp.o[0m
+[1.090s] [ 50%] [32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o[0m
+[1.099s] [ 50%] Built target ament_cmake_python_copy_myamr_localization
+[1.439s] running egg_info
+[1.441s] creating myamr_localization.egg-info
+[1.441s] writing myamr_localization.egg-info/PKG-INFO
+[1.441s] writing dependency_links to myamr_localization.egg-info/dependency_links.txt
+[1.442s] writing top-level names to myamr_localization.egg-info/top_level.txt
+[1.442s] writing manifest file 'myamr_localization.egg-info/SOURCES.txt'
+[1.445s] reading manifest file 'myamr_localization.egg-info/SOURCES.txt'
+[1.451s] writing manifest file 'myamr_localization.egg-info/SOURCES.txt'
+[1.506s] [ 50%] Built target ament_cmake_python_build_myamr_localization_egg
+[8.305s] [ 66%] [32m[1mLinking CXX executable imu_republisher[0m
+[8.390s] [ 83%] [32m[1mLinking CXX executable odometry_motion_model[0m
+[8.676s] [ 83%] Built target imu_republisher
+[8.792s] [ 83%] Built target odometry_motion_model
+[12.052s] [100%] [32m[1mLinking CXX executable kalman_filter[0m
+[12.473s] [100%] Built target kalman_filter
+[12.481s] Invoked command in '/home/ray/autonomous_robot/build/myamr_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_localization -- -j8 -l8
+[12.482s] Invoking command in '/home/ray/autonomous_robot/build/myamr_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_localization
+[12.487s] -- Install configuration: ""
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/pythonpath.sh
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/pythonpath.dsv
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/PKG-INFO
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.487s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/top_level.txt
+[12.488s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization
+[12.488s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/imu_republisher.py
+[12.488s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/odometry_motion_model.py
+[12.488s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/__init__.py
+[12.488s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/kalman_filter.py
+[12.513s] Listing '/home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization'...
+[12.513s] Compiling '/home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/__init__.py'...
+[12.513s] Compiling '/home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/imu_republisher.py'...
+[12.513s] Compiling '/home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/kalman_filter.py'...
+[12.513s] Compiling '/home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/odometry_motion_model.py'...
+[12.516s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/include/include
+[12.516s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/include/include/myamr_localization
+[12.516s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/include/include/myamr_localization/kalman_filter.hpp
+[12.516s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/include/include/myamr_localization/odometry_motion_model.hpp
+[12.516s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/bin/odometry_motion_model
+[12.519s] -- Set runtime path of "/home/ray/autonomous_robot/install/myamr_localization/bin/odometry_motion_model" to ""
+[12.519s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/kalman_filter
+[12.522s] -- Set runtime path of "/home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/kalman_filter" to ""
+[12.522s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/imu_republisher
+[12.524s] -- Set runtime path of "/home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/imu_republisher" to ""
+[12.524s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/odometry_motion_model
+[12.525s] -- Set runtime path of "/home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/odometry_motion_model" to ""
+[12.525s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/launch
+[12.525s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/launch/local_localization.launch.py
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/launch/global_localization.launch.py
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config/amcl.yaml
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config/odometry_motion_model.rviz
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config/ekf.yaml
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/rviz
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/rviz/global_localization.rviz
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/kalman_filter.py
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/imu_republisher.py
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/odometry_motion_model.py
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/ament_index/resource_index/package_run_dependencies/myamr_localization
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/ament_index/resource_index/parent_prefix_path/myamr_localization
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/ament_prefix_path.sh
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/ament_prefix_path.dsv
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/path.sh
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/path.dsv
+[12.526s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.bash
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.sh
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.zsh
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.dsv
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.dsv
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/ament_index/resource_index/packages/myamr_localization
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/cmake/myamr_localizationConfig.cmake
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/cmake/myamr_localizationConfig-version.cmake
+[12.527s] -- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.xml
+[12.529s] Invoked command in '/home/ray/autonomous_robot/build/myamr_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_localization

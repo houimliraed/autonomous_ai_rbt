@@ -1,0 +1,60 @@
+[ 33%] Built target imu_republisher
+[ 66%] Built target kalman_filter
+[100%] Built target odometry_motion_model
+[100%] Built target ament_cmake_python_copy_myamr_localization
+running egg_info
+writing myamr_localization.egg-info/PKG-INFO
+writing dependency_links to myamr_localization.egg-info/dependency_links.txt
+writing top-level names to myamr_localization.egg-info/top_level.txt
+reading manifest file 'myamr_localization.egg-info/SOURCES.txt'
+writing manifest file 'myamr_localization.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_myamr_localization_egg
+-- Install configuration: ""
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/pythonpath.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/pythonpath.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info
+-- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/imu_republisher.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/odometry_motion_model.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/__init__.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization/kalman_filter.py
+Listing '/home/ray/autonomous_robot/install/myamr_localization/local/lib/python3.10/dist-packages/myamr_localization'...
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/include/include
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/include/include/myamr_localization
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/include/include/myamr_localization/kalman_filter.hpp
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/include/include/myamr_localization/odometry_motion_model.hpp
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/bin/odometry_motion_model
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/kalman_filter
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/imu_republisher
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/odometry_motion_model
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/launch
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/launch/local_localization.launch.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/launch/global_localization.launch.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config/amcl.yaml
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config/odometry_motion_model.rviz
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/config/ekf.yaml
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/rviz
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/rviz/global_localization.rviz
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/kalman_filter.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/imu_republisher.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/lib/myamr_localization/odometry_motion_model.py
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/ament_index/resource_index/package_run_dependencies/myamr_localization
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/ament_index/resource_index/parent_prefix_path/myamr_localization
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/path.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/environment/path.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.bash
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.sh
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.zsh
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/local_setup.dsv
+-- Installing: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.dsv
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/ament_index/resource_index/packages/myamr_localization
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/cmake/myamr_localizationConfig.cmake
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/cmake/myamr_localizationConfig-version.cmake
+-- Up-to-date: /home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.xml

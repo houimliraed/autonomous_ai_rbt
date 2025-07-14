@@ -1,0 +1,9 @@
+setup.py
+myamr_controller/__init__.py
+myamr_controller/noisy_controller.py
+myamr_controller/simple_controller.py
+myamr_controller/twist_relay.py
+myamr_controller.egg-info/PKG-INFO
+myamr_controller.egg-info/SOURCES.txt
+myamr_controller.egg-info/dependency_links.txt
+myamr_controller.egg-info/top_level.txt

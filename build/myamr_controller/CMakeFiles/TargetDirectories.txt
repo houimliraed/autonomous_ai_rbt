@@ -1,0 +1,12 @@
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/uninstall.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/myamr_controller_uninstall.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/twist_relay.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/ament_cmake_python_copy_myamr_controller.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/ament_cmake_python_build_myamr_controller_egg.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/test.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/edit_cache.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/rebuild_cache.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/list_install_components.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/install.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/install/local.dir
+/home/ray/autonomous_robot/build/myamr_controller/CMakeFiles/install/strip.dir

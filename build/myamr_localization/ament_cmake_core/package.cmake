@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "myamr_localization")
 set(myamr_localization_VERSION "0.0.0")
-set(myamr_localization_MAINTAINER "Antonio Brandi <antonio.brandi@outlook.it>")
+set(myamr_localization_MAINTAINER "Houimli Raed <houimliraed@outlook.fr>")
 set(myamr_localization_BUILD_DEPENDS "rclcpp" "rclpy" "nav_msgs" "sensor_msgs" "geometry_msgs" "tf2")
 set(myamr_localization_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")
 set(myamr_localization_BUILD_EXPORT_DEPENDS "rclcpp" "rclpy" "nav_msgs" "sensor_msgs" "geometry_msgs" "tf2")

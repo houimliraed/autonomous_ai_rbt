@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "myamr_bringup")
 set(myamr_bringup_VERSION "0.0.0")
-set(myamr_bringup_MAINTAINER "Antonio Brandi <antonio.brandi@outlook.it>")
+set(myamr_bringup_MAINTAINER "Houimli Raed <houimliraed@outlook.fr>")
 set(myamr_bringup_BUILD_DEPENDS )
 set(myamr_bringup_BUILDTOOL_DEPENDS "ament_cmake")
 set(myamr_bringup_BUILD_EXPORT_DEPENDS )

@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "myamr_controller")
 set(myamr_controller_VERSION "0.0.0")
-set(myamr_controller_MAINTAINER "Antonio Brandi <antonio.brandi@outlook.it>")
+set(myamr_controller_MAINTAINER "Houimli Raed <houimliraed@outlook.fr>")
 set(myamr_controller_BUILD_DEPENDS "rclcpp" "rclpy" "geometry_msgs" "std_msgs" "sensor_msgs" "nav_msgs" "tf2_ros" "tf2" "eigen")
 set(myamr_controller_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")
 set(myamr_controller_BUILD_EXPORT_DEPENDS "rclcpp" "rclpy" "geometry_msgs" "std_msgs" "sensor_msgs" "nav_msgs" "tf2_ros" "tf2" "eigen")

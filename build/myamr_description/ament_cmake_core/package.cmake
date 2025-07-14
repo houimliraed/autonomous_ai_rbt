@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "myamr_description")
 set(myamr_description_VERSION "0.0.0")
-set(myamr_description_MAINTAINER "Antonio Brandi <antonio.brandi@outlook.it>")
+set(myamr_description_MAINTAINER "Houimli Raed <houimliraed@outlook.fr>")
 set(myamr_description_BUILD_DEPENDS )
 set(myamr_description_BUILDTOOL_DEPENDS "ament_cmake")
 set(myamr_description_BUILD_EXPORT_DEPENDS )

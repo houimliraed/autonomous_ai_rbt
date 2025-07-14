@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "myamr_mapping")
 set(myamr_mapping_VERSION "0.0.0")
-set(myamr_mapping_MAINTAINER "Antonio Brandi <antonio.brandi@outlook.it>")
+set(myamr_mapping_MAINTAINER "Houimli Raed <houimliraed@outlook.fr>")
 set(myamr_mapping_BUILD_DEPENDS "rclcpp" "rclpy" "sensor_msgs" "nav_msgs" "geometry_msgs" "tf2_ros" "tf2")
 set(myamr_mapping_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")
 set(myamr_mapping_BUILD_EXPORT_DEPENDS "rclcpp" "rclpy" "sensor_msgs" "nav_msgs" "geometry_msgs" "tf2_ros" "tf2")

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0ecf17ae3e248fa6ec14.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "myamr_utils",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_myamr_utils_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_myamr_utils_egg-2602f6c41ee96d131179.json",
+					"name" : "ament_cmake_python_build_myamr_utils_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_myamr_utils::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_myamr_utils-718b8f7df0952ff09f8e.json",
+					"name" : "ament_cmake_python_copy_myamr_utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "myamr_utils_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-myamr_utils_uninstall-94e4dd736492c393502b.json",
+					"name" : "myamr_utils_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "safety_stop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-safety_stop-046ace06940f21d7162b.json",
+					"name" : "safety_stop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cda69beb8d1cd01f5a48.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ray/autonomous_robot/build/myamr_utils",
+		"source" : "/home/ray/autonomous_robot/myamr_utils"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,33 @@
+[1.533s] Invoking command in '/home/ray/autonomous_robot/myamr_motion': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_motion build --build-base /home/ray/autonomous_robot/build/myamr_motion/build install --record /home/ray/autonomous_robot/build/myamr_motion/install.log --single-version-externally-managed install_data
+[1.926s] running egg_info
+[1.928s] creating ../build/myamr_motion/myamr_motion.egg-info
+[1.928s] writing ../build/myamr_motion/myamr_motion.egg-info/PKG-INFO
+[1.928s] writing dependency_links to ../build/myamr_motion/myamr_motion.egg-info/dependency_links.txt
+[1.928s] writing entry points to ../build/myamr_motion/myamr_motion.egg-info/entry_points.txt
+[1.929s] writing requirements to ../build/myamr_motion/myamr_motion.egg-info/requires.txt
+[1.929s] writing top-level names to ../build/myamr_motion/myamr_motion.egg-info/top_level.txt
+[1.929s] writing manifest file '../build/myamr_motion/myamr_motion.egg-info/SOURCES.txt'
+[1.932s] reading manifest file '../build/myamr_motion/myamr_motion.egg-info/SOURCES.txt'
+[1.932s] writing manifest file '../build/myamr_motion/myamr_motion.egg-info/SOURCES.txt'
+[1.933s] running build
+[1.933s] running build_py
+[1.933s] creating /home/ray/autonomous_robot/build/myamr_motion/build
+[1.933s] creating /home/ray/autonomous_robot/build/myamr_motion/build/lib
+[1.933s] creating /home/ray/autonomous_robot/build/myamr_motion/build/lib/myamr_motion
+[1.933s] copying myamr_motion/__init__.py -> /home/ray/autonomous_robot/build/myamr_motion/build/lib/myamr_motion
+[1.934s] running install
+[1.934s] running install_lib
+[1.935s] creating /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion
+[1.935s] copying /home/ray/autonomous_robot/build/myamr_motion/build/lib/myamr_motion/__init__.py -> /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion
+[1.936s] byte-compiling /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion/__init__.py to __init__.cpython-310.pyc
+[1.936s] running install_data
+[1.937s] creating /home/ray/autonomous_robot/install/myamr_motion/share/ament_index
+[1.937s] creating /home/ray/autonomous_robot/install/myamr_motion/share/ament_index/resource_index
+[1.937s] creating /home/ray/autonomous_robot/install/myamr_motion/share/ament_index/resource_index/packages
+[1.937s] copying resource/myamr_motion -> /home/ray/autonomous_robot/install/myamr_motion/share/ament_index/resource_index/packages
+[1.937s] copying package.xml -> /home/ray/autonomous_robot/install/myamr_motion/share/myamr_motion
+[1.937s] running install_egg_info
+[1.941s] Copying ../build/myamr_motion/myamr_motion.egg-info to /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion-0.0.0-py3.10.egg-info
+[1.942s] running install_scripts
+[1.973s] writing list of installed files to '/home/ray/autonomous_robot/build/myamr_motion/install.log'
+[2.012s] Invoked command in '/home/ray/autonomous_robot/myamr_motion' returned '0': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_motion build --build-base /home/ray/autonomous_robot/build/myamr_motion/build install --record /home/ray/autonomous_robot/build/myamr_motion/install.log --single-version-externally-managed install_data

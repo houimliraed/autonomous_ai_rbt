@@ -1,0 +1,21 @@
+[1.516s] Invoking command in '/home/ray/autonomous_robot/myamr_planning': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_planning build --build-base /home/ray/autonomous_robot/build/myamr_planning/build install --record /home/ray/autonomous_robot/build/myamr_planning/install.log --single-version-externally-managed install_data
+[1.934s] running egg_info
+[1.935s] writing ../build/myamr_planning/myamr_planning.egg-info/PKG-INFO
+[1.936s] writing dependency_links to ../build/myamr_planning/myamr_planning.egg-info/dependency_links.txt
+[1.936s] writing entry points to ../build/myamr_planning/myamr_planning.egg-info/entry_points.txt
+[1.936s] writing requirements to ../build/myamr_planning/myamr_planning.egg-info/requires.txt
+[1.937s] writing top-level names to ../build/myamr_planning/myamr_planning.egg-info/top_level.txt
+[1.940s] reading manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+[1.945s] writing manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+[1.946s] running build
+[1.946s] running build_py
+[1.946s] running install
+[1.950s] running install_lib
+[1.952s] running install_data
+[1.952s] running install_egg_info
+[1.955s] removing '/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning-0.0.0-py3.10.egg-info' (and everything under it)
+[1.957s] Copying ../build/myamr_planning/myamr_planning.egg-info to /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning-0.0.0-py3.10.egg-info
+[1.960s] running install_scripts
+[1.995s] Installing dijkstra_planning script to /home/ray/autonomous_robot/install/myamr_planning/lib/myamr_planning
+[1.996s] writing list of installed files to '/home/ray/autonomous_robot/build/myamr_planning/install.log'
+[2.038s] Invoked command in '/home/ray/autonomous_robot/myamr_planning' returned '0': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_planning build --build-base /home/ray/autonomous_robot/build/myamr_planning/build install --record /home/ray/autonomous_robot/build/myamr_planning/install.log --single-version-externally-managed install_data

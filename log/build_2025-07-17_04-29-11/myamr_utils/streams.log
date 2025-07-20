@@ -1,0 +1,70 @@
+[0.251s] Invoking command in '/home/ray/autonomous_robot/build/myamr_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/autonomous_robot/myamr_utils -DCMAKE_INSTALL_PREFIX=/home/ray/autonomous_robot/install/myamr_utils
+[0.261s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.410s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.452s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.452s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.459s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.471s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.487s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.516s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.517s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.604s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.641s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.641s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.650s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.666s] -- Found twist_mux_msgs: 3.0.1 (/opt/ros/humble/share/twist_mux_msgs/cmake)
+[0.711s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.720s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.859s] -- Configuring done
+[0.875s] -- Generating done
+[0.884s] -- Build files have been written to: /home/ray/autonomous_robot/build/myamr_utils
+[0.898s] Invoked command in '/home/ray/autonomous_robot/build/myamr_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake /home/ray/autonomous_robot/myamr_utils -DCMAKE_INSTALL_PREFIX=/home/ray/autonomous_robot/install/myamr_utils
+[0.899s] Invoking command in '/home/ray/autonomous_robot/build/myamr_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_utils -- -j8 -l8
+[0.970s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_stop.dir/src/safety_stop.cpp.o[0m
+[0.975s] [ 50%] Built target ament_cmake_python_copy_myamr_utils
+[1.270s] running egg_info
+[1.271s] creating myamr_utils.egg-info
+[1.271s] writing myamr_utils.egg-info/PKG-INFO
+[1.272s] writing dependency_links to myamr_utils.egg-info/dependency_links.txt
+[1.272s] writing top-level names to myamr_utils.egg-info/top_level.txt
+[1.272s] writing manifest file 'myamr_utils.egg-info/SOURCES.txt'
+[1.274s] reading manifest file 'myamr_utils.egg-info/SOURCES.txt'
+[1.274s] writing manifest file 'myamr_utils.egg-info/SOURCES.txt'
+[1.318s] [ 50%] Built target ament_cmake_python_build_myamr_utils_egg
+[8.987s] [100%] [32m[1mLinking CXX executable safety_stop[0m
+[9.402s] [100%] Built target safety_stop
+[9.414s] Invoked command in '/home/ray/autonomous_robot/build/myamr_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_utils -- -j8 -l8
+[9.416s] Invoking command in '/home/ray/autonomous_robot/build/myamr_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_utils
+[9.422s] -- Install configuration: ""
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/environment/pythonpath.sh
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/environment/pythonpath.dsv
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils-0.0.0-py3.10.egg-info
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils-0.0.0-py3.10.egg-info/PKG-INFO
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils-0.0.0-py3.10.egg-info/top_level.txt
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils/safety_stop.py
+[9.423s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils/__init__.py
+[9.452s] Listing '/home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils'...
+[9.452s] Compiling '/home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils/__init__.py'...
+[9.452s] Compiling '/home/ray/autonomous_robot/install/myamr_utils/local/lib/python3.10/dist-packages/myamr_utils/safety_stop.py'...
+[9.455s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/lib/myamr_utils/safety_stop
+[9.458s] -- Set runtime path of "/home/ray/autonomous_robot/install/myamr_utils/lib/myamr_utils/safety_stop" to ""
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/lib/myamr_utils/safety_stop.py
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/ament_index/resource_index/package_run_dependencies/myamr_utils
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/ament_index/resource_index/parent_prefix_path/myamr_utils
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/environment/ament_prefix_path.sh
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/environment/ament_prefix_path.dsv
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/environment/path.sh
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/environment/path.dsv
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/local_setup.bash
+[9.458s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/local_setup.sh
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/local_setup.zsh
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/local_setup.dsv
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.dsv
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/ament_index/resource_index/packages/myamr_utils
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/cmake/myamr_utilsConfig.cmake
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/cmake/myamr_utilsConfig-version.cmake
+[9.459s] -- Installing: /home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.xml
+[9.461s] Invoked command in '/home/ray/autonomous_robot/build/myamr_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_utils

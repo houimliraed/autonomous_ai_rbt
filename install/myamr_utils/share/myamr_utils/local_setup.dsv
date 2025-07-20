@@ -1,0 +1,3 @@
+source;share/myamr_utils/environment/ament_prefix_path.sh
+source;share/myamr_utils/environment/path.sh
+source;share/myamr_utils/environment/pythonpath.sh

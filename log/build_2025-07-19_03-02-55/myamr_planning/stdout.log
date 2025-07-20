@@ -1,0 +1,25 @@
+running egg_info
+writing ../build/myamr_planning/myamr_planning.egg-info/PKG-INFO
+writing dependency_links to ../build/myamr_planning/myamr_planning.egg-info/dependency_links.txt
+writing entry points to ../build/myamr_planning/myamr_planning.egg-info/entry_points.txt
+writing requirements to ../build/myamr_planning/myamr_planning.egg-info/requires.txt
+writing top-level names to ../build/myamr_planning/myamr_planning.egg-info/top_level.txt
+reading manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+writing manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+running build
+running build_py
+copying myamr_planning/a_star_planner.py -> /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning
+copying myamr_planning/dijkstra_planning.py -> /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning
+running install
+running install_lib
+copying /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning/a_star_planner.py -> /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning
+copying /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning/dijkstra_planning.py -> /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning
+byte-compiling /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning/a_star_planner.py to a_star_planner.cpython-310.pyc
+byte-compiling /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning/dijkstra_planning.py to dijkstra_planning.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/myamr_planning/myamr_planning.egg-info to /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning-0.0.0-py3.10.egg-info
+running install_scripts
+Installing dijkstra_planning script to /home/ray/autonomous_robot/install/myamr_planning/lib/myamr_planning
+writing list of installed files to '/home/ray/autonomous_robot/build/myamr_planning/install.log'

@@ -98,7 +98,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/myamr_controller" TYPE PROGRAM FILES "/home/ray/autonomous_robot/myamr_controller/myamr_controller/twist_relay.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/myamr_controller" TYPE PROGRAM FILES
+    "/home/ray/autonomous_robot/myamr_controller/myamr_controller/twist_relay.py"
+    "/home/ray/autonomous_robot/myamr_controller/myamr_controller/noisy_controller.py"
+    "/home/ray/autonomous_robot/myamr_controller/myamr_controller/simple_controller.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

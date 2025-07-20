@@ -1,0 +1,3 @@
+[console_scripts]
+dijkstra_planning = myamr_planning.dijkstra_planning:main
+

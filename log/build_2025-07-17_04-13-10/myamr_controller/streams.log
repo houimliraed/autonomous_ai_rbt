@@ -1,0 +1,79 @@
+[0.071s] Invoking command in '/home/ray/autonomous_robot/build/myamr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_controller -- -j8 -l8
+[0.139s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.459s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.525s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.530s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.542s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.559s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.752s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.752s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.911s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.008s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[1.009s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.036s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.070s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.103s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.536s] -- Configuring done
+[1.565s] -- Generating done
+[1.574s] -- Build files have been written to: /home/ray/autonomous_robot/build/myamr_controller
+[1.618s] [35m[1mConsolidate compiler generated dependencies of target twist_relay[0m
+[1.648s] [  0%] Built target ament_cmake_python_copy_myamr_controller
+[1.661s] [100%] Built target twist_relay
+[2.162s] running egg_info
+[2.164s] writing myamr_controller.egg-info/PKG-INFO
+[2.165s] writing dependency_links to myamr_controller.egg-info/dependency_links.txt
+[2.165s] writing top-level names to myamr_controller.egg-info/top_level.txt
+[2.171s] reading manifest file 'myamr_controller.egg-info/SOURCES.txt'
+[2.172s] writing manifest file 'myamr_controller.egg-info/SOURCES.txt'
+[2.247s] [100%] Built target ament_cmake_python_build_myamr_controller_egg
+[2.269s] Invoked command in '/home/ray/autonomous_robot/build/myamr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_controller -- -j8 -l8
+[2.271s] Invoking command in '/home/ray/autonomous_robot/build/myamr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_controller
+[2.284s] -- Install configuration: ""
+[2.285s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/pythonpath.sh
+[2.285s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/pythonpath.dsv
+[2.285s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller-0.0.0-py3.10.egg-info
+[2.285s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.285s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller-0.0.0-py3.10.egg-info/PKG-INFO
+[2.285s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.286s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller-0.0.0-py3.10.egg-info/top_level.txt
+[2.286s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller
+[2.286s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller/simple_controller.py
+[2.286s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller/twist_relay.py
+[2.286s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller/noisy_controller.py
+[2.286s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller/__init__.py
+[2.360s] Listing '/home/ray/autonomous_robot/install/myamr_controller/local/lib/python3.10/dist-packages/myamr_controller'...
+[2.372s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/include/include
+[2.372s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/include/include/bumperbot_controller
+[2.372s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/include/include/bumperbot_controller/noisy_controller.hpp
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/include/include/bumperbot_controller/simple_controller.hpp
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/twist_relay
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/launch
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/launch/joystick_teleop.launch.py
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/launch/controller.launch.py
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config
+[2.373s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/joy_teleop.yaml
+[2.374s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/joy_config.yaml
+[2.374s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/twist_mux_joy.yaml
+[2.374s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/myamr_controllers.yaml
+[2.374s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/twist_mux_locks.yaml
+[2.374s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/twist_mux_topics.yaml
+[2.374s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/twist_relay.py
+[2.374s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/noisy_controller.py
+[2.374s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/simple_controller.py
+[2.375s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/ament_index/resource_index/package_run_dependencies/myamr_controller
+[2.375s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/ament_index/resource_index/parent_prefix_path/myamr_controller
+[2.375s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/ament_prefix_path.sh
+[2.375s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/ament_prefix_path.dsv
+[2.375s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/path.sh
+[2.375s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/path.dsv
+[2.375s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/local_setup.bash
+[2.375s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/local_setup.sh
+[2.375s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/local_setup.zsh
+[2.375s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/local_setup.dsv
+[2.375s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.dsv
+[2.376s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/ament_index/resource_index/packages/myamr_controller
+[2.376s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/cmake/myamr_controllerConfig.cmake
+[2.376s] -- Up-to-date: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/cmake/myamr_controllerConfig-version.cmake
+[2.376s] -- Installing: /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.xml
+[2.381s] Invoked command in '/home/ray/autonomous_robot/build/myamr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_controller

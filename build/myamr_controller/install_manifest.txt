@@ -20,6 +20,8 @@
 /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/twist_mux_locks.yaml
 /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/config/twist_mux_topics.yaml
 /home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/twist_relay.py
+/home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/noisy_controller.py
+/home/ray/autonomous_robot/install/myamr_controller/lib/myamr_controller/simple_controller.py
 /home/ray/autonomous_robot/install/myamr_controller/share/ament_index/resource_index/package_run_dependencies/myamr_controller
 /home/ray/autonomous_robot/install/myamr_controller/share/ament_index/resource_index/parent_prefix_path/myamr_controller
 /home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/environment/ament_prefix_path.sh

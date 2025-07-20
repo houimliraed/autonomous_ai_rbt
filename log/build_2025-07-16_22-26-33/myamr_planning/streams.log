@@ -1,0 +1,33 @@
+[0.633s] Invoking command in '/home/ray/autonomous_robot/myamr_planning': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_planning build --build-base /home/ray/autonomous_robot/build/myamr_planning/build install --record /home/ray/autonomous_robot/build/myamr_planning/install.log --single-version-externally-managed install_data
+[0.813s] running egg_info
+[0.815s] creating ../build/myamr_planning/myamr_planning.egg-info
+[0.816s] writing ../build/myamr_planning/myamr_planning.egg-info/PKG-INFO
+[0.816s] writing dependency_links to ../build/myamr_planning/myamr_planning.egg-info/dependency_links.txt
+[0.816s] writing entry points to ../build/myamr_planning/myamr_planning.egg-info/entry_points.txt
+[0.816s] writing requirements to ../build/myamr_planning/myamr_planning.egg-info/requires.txt
+[0.816s] writing top-level names to ../build/myamr_planning/myamr_planning.egg-info/top_level.txt
+[0.816s] writing manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+[0.816s] reading manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+[0.818s] writing manifest file '../build/myamr_planning/myamr_planning.egg-info/SOURCES.txt'
+[0.818s] running build
+[0.818s] running build_py
+[0.818s] creating /home/ray/autonomous_robot/build/myamr_planning/build
+[0.818s] creating /home/ray/autonomous_robot/build/myamr_planning/build/lib
+[0.818s] creating /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning
+[0.819s] copying myamr_planning/__init__.py -> /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning
+[0.819s] running install
+[0.819s] running install_lib
+[0.819s] creating /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning
+[0.819s] copying /home/ray/autonomous_robot/build/myamr_planning/build/lib/myamr_planning/__init__.py -> /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning
+[0.819s] byte-compiling /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning/__init__.py to __init__.cpython-310.pyc
+[0.819s] running install_data
+[0.819s] creating /home/ray/autonomous_robot/install/myamr_planning/share/ament_index
+[0.820s] creating /home/ray/autonomous_robot/install/myamr_planning/share/ament_index/resource_index
+[0.820s] creating /home/ray/autonomous_robot/install/myamr_planning/share/ament_index/resource_index/packages
+[0.820s] copying resource/myamr_planning -> /home/ray/autonomous_robot/install/myamr_planning/share/ament_index/resource_index/packages
+[0.820s] copying package.xml -> /home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning
+[0.820s] running install_egg_info
+[0.822s] Copying ../build/myamr_planning/myamr_planning.egg-info to /home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages/myamr_planning-0.0.0-py3.10.egg-info
+[0.823s] running install_scripts
+[0.845s] writing list of installed files to '/home/ray/autonomous_robot/build/myamr_planning/install.log'
+[0.877s] Invoked command in '/home/ray/autonomous_robot/myamr_planning' returned '0': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_planning build --build-base /home/ray/autonomous_robot/build/myamr_planning/build install --record /home/ray/autonomous_robot/build/myamr_planning/install.log --single-version-externally-managed install_data

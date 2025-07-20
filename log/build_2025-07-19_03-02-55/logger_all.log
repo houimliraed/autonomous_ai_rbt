@@ -1,0 +1,549 @@
+[0.175s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.175s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x78b44ae4b9a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78b44af90d90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78b44af90d90>>)
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.360s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ray/autonomous_robot'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'ignore_ament_install'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extensions ['colcon_pkg']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'ros'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extensions ['cmake', 'python']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'cmake'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'python'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extensions ['python_setup_py']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing) by extension 'python_setup_py'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/build) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/build) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/build) ignored
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/install) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/install) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/install) ignored
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/log) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/log) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/log) ignored
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'ros'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extensions ['cmake', 'python']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'cmake'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'python'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extensions ['python_setup_py']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(amr_testing/src) by extension 'python_setup_py'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extension 'ignore'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extension 'ignore_ament_install'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extensions ['colcon_pkg']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extension 'colcon_pkg'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extensions ['colcon_meta']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extension 'colcon_meta'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extensions ['ros']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_bringup) by extension 'ros'
+[0.374s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_bringup' with type 'ros.ament_cmake' and name 'myamr_bringup'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extension 'ignore_ament_install'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extensions ['colcon_pkg']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extension 'colcon_pkg'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extensions ['colcon_meta']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extension 'colcon_meta'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extensions ['ros']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_controller) by extension 'ros'
+[0.375s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_controller' with type 'ros.ament_cmake' and name 'myamr_controller'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extension 'ignore_ament_install'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extensions ['colcon_pkg']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extension 'colcon_pkg'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extensions ['colcon_meta']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extension 'colcon_meta'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extensions ['ros']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_description) by extension 'ros'
+[0.378s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_description' with type 'ros.ament_cmake' and name 'myamr_description'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extension 'ignore_ament_install'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extensions ['colcon_pkg']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extension 'colcon_pkg'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extensions ['colcon_meta']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extension 'colcon_meta'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extensions ['ros']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_localization) by extension 'ros'
+[0.379s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_localization' with type 'ros.ament_cmake' and name 'myamr_localization'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extension 'ignore_ament_install'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extensions ['colcon_pkg']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extension 'colcon_pkg'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extensions ['colcon_meta']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extension 'colcon_meta'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extensions ['ros']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_mapping) by extension 'ros'
+[0.380s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_mapping' with type 'ros.ament_cmake' and name 'myamr_mapping'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extension 'ignore'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extension 'ignore_ament_install'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extensions ['colcon_pkg']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extension 'colcon_pkg'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extensions ['colcon_meta']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extension 'colcon_meta'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extensions ['ros']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_planning) by extension 'ros'
+[0.381s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_planning' with type 'ros.ament_python' and name 'myamr_planning'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(myamr_utils) by extension 'ros'
+[0.382s] DEBUG:colcon.colcon_core.package_identification:Package 'myamr_utils' with type 'ros.ament_cmake' and name 'myamr_utils'
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.416s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/ray/autonomous_robot/install
+[0.419s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/ray/turtlebot3_ws/install
+[0.420s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ray/autonomous_tb3_ws/install
+[0.420s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ray/autonomous_tb3_ws/src/install
+[0.422s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 411 installed packages in /opt/ros/humble
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'cmake_target' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.508s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_controller', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_controller', 'symlink_install': False, 'test_result_base': None}
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_description', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_description', 'symlink_install': False, 'test_result_base': None}
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_localization', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_localization', 'symlink_install': False, 'test_result_base': None}
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'cmake_target' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'myamr_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_mapping', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_mapping', 'symlink_install': False, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_planning', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_planning', 'symlink_install': False, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_utils', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_utils', 'symlink_install': False, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'myamr_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'myamr_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ray/autonomous_robot/build/myamr_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ray/autonomous_robot/install/myamr_bringup', 'merge_install': False, 'path': '/home/ray/autonomous_robot/myamr_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.510s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.511s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.512s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ray/autonomous_robot/myamr_controller' with build type 'ament_cmake'
+[0.512s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ray/autonomous_robot/myamr_controller'
+[0.515s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.515s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.515s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.519s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ray/autonomous_robot/myamr_description' with build type 'ament_cmake'
+[0.519s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ray/autonomous_robot/myamr_description'
+[0.519s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.519s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.523s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ray/autonomous_robot/myamr_localization' with build type 'ament_cmake'
+[0.523s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ray/autonomous_robot/myamr_localization'
+[0.523s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.523s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.527s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ray/autonomous_robot/myamr_mapping' with build type 'ament_cmake'
+[0.527s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ray/autonomous_robot/myamr_mapping'
+[0.527s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.527s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.533s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ray/autonomous_robot/myamr_planning' with build type 'ament_python'
+[0.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_planning', 'ament_prefix_path')
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/hook/ament_prefix_path.ps1'
+[0.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/hook/ament_prefix_path.dsv'
+[0.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/hook/ament_prefix_path.sh'
+[0.536s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.536s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.540s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ray/autonomous_robot/myamr_utils' with build type 'ament_cmake'
+[0.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ray/autonomous_robot/myamr_utils'
+[0.541s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.541s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_controller -- -j8 -l8
+[0.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_description -- -j8 -l8
+[0.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_localization -- -j8 -l8
+[0.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_mapping -- -j8 -l8
+[0.904s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ray/autonomous_robot/myamr_planning'
+[0.904s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.904s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_utils -- -j8 -l8
+[0.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_description -- -j8 -l8
+[0.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_description
+[0.935s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_localization -- -j8 -l8
+[0.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_localization
+[0.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_mapping -- -j8 -l8
+[0.966s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_description)
+[0.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_mapping
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description' for CMake module files
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description' for CMake config files
+[1.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_description
+[1.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_description', 'cmake_prefix_path')
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/hook/cmake_prefix_path.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/hook/cmake_prefix_path.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/hook/cmake_prefix_path.sh'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/bin'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/lib/pkgconfig/myamr_description.pc'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/lib/python3.10/site-packages'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/bin'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.ps1'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.dsv'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.sh'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.bash'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.zsh'
+[1.050s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_description/share/colcon-core/packages/myamr_description)
+[1.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_description)
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description' for CMake module files
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description' for CMake config files
+[1.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_description', 'cmake_prefix_path')
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/hook/cmake_prefix_path.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/hook/cmake_prefix_path.dsv'
+[1.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/hook/cmake_prefix_path.sh'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/bin'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/lib/pkgconfig/myamr_description.pc'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/lib/python3.10/site-packages'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_description/bin'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.ps1'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.dsv'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.sh'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.bash'
+[1.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_description/share/myamr_description/package.zsh'
+[1.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_description/share/colcon-core/packages/myamr_description)
+[1.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_controller -- -j8 -l8
+[1.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_controller
+[1.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_localization)
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization' for CMake module files
+[1.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_localization
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization' for CMake config files
+[1.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_localization', 'cmake_prefix_path')
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/cmake_prefix_path.ps1'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/cmake_prefix_path.dsv'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/cmake_prefix_path.sh'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/lib'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/bin'
+[1.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_localization', 'path')
+[1.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/path.ps1'
+[1.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/path.dsv'
+[1.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/path.sh'
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/lib/pkgconfig/myamr_localization.pc'
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/lib/python3.10/site-packages'
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/bin'
+[1.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_localization', 'pythonscriptspath')
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/pythonscriptspath.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/pythonscriptspath.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/pythonscriptspath.sh'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.ps1'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.dsv'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.sh'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.bash'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.zsh'
+[1.070s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_localization/share/colcon-core/packages/myamr_localization)
+[1.070s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_localization)
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization' for CMake module files
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization' for CMake config files
+[1.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_localization', 'cmake_prefix_path')
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/cmake_prefix_path.ps1'
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/cmake_prefix_path.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/cmake_prefix_path.sh'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/lib'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/bin'
+[1.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_localization', 'path')
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/path.ps1'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/path.dsv'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/path.sh'
+[1.074s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/lib/pkgconfig/myamr_localization.pc'
+[1.074s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/lib/python3.10/site-packages'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_localization/bin'
+[1.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_localization', 'pythonscriptspath')
+[1.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/pythonscriptspath.ps1'
+[1.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/pythonscriptspath.dsv'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/hook/pythonscriptspath.sh'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.sh'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.bash'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_localization/share/myamr_localization/package.zsh'
+[1.079s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_localization/share/colcon-core/packages/myamr_localization)
+[1.080s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_mapping)
+[1.080s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping' for CMake module files
+[1.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_mapping
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping' for CMake config files
+[1.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_mapping', 'cmake_prefix_path')
+[1.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/hook/cmake_prefix_path.ps1'
+[1.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/hook/cmake_prefix_path.dsv'
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/hook/cmake_prefix_path.sh'
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/lib'
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/bin'
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/lib/pkgconfig/myamr_mapping.pc'
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/lib/python3.10/site-packages'
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/bin'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.ps1'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.dsv'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.sh'
+[1.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.bash'
+[1.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.zsh'
+[1.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_mapping/share/colcon-core/packages/myamr_mapping)
+[1.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_mapping)
+[1.090s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping' for CMake module files
+[1.090s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping' for CMake config files
+[1.091s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_mapping', 'cmake_prefix_path')
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/hook/cmake_prefix_path.ps1'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/hook/cmake_prefix_path.dsv'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/hook/cmake_prefix_path.sh'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/lib'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/bin'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/lib/pkgconfig/myamr_mapping.pc'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/lib/python3.10/site-packages'
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_mapping/bin'
+[1.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.ps1'
+[1.093s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.dsv'
+[1.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.sh'
+[1.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.bash'
+[1.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_mapping/share/myamr_mapping/package.zsh'
+[1.095s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_mapping/share/colcon-core/packages/myamr_mapping)
+[1.109s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_controller)
+[1.109s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller' for CMake module files
+[1.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_controller
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller' for CMake config files
+[1.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_controller', 'cmake_prefix_path')
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/hook/cmake_prefix_path.ps1'
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/hook/cmake_prefix_path.dsv'
+[1.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/hook/cmake_prefix_path.sh'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/lib'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/bin'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/lib/pkgconfig/myamr_controller.pc'
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/lib/python3.10/site-packages'
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/bin'
+[1.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.ps1'
+[1.114s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.dsv'
+[1.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.sh'
+[1.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.bash'
+[1.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.zsh'
+[1.116s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_controller/share/colcon-core/packages/myamr_controller)
+[1.117s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_controller)
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller' for CMake module files
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller' for CMake config files
+[1.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_controller', 'cmake_prefix_path')
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/hook/cmake_prefix_path.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/hook/cmake_prefix_path.dsv'
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/hook/cmake_prefix_path.sh'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/lib'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/bin'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/lib/pkgconfig/myamr_controller.pc'
+[1.120s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/lib/python3.10/site-packages'
+[1.120s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_controller/bin'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.sh'
+[1.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.bash'
+[1.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_controller/share/myamr_controller/package.zsh'
+[1.123s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_controller/share/colcon-core/packages/myamr_controller)
+[1.123s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ray/autonomous_robot/myamr_bringup' with build type 'ament_cmake'
+[1.123s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ray/autonomous_robot/myamr_bringup'
+[1.124s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.124s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_bringup': CMAKE_PREFIX_PATH=/home/ray/autonomous_robot/install/myamr_mapping:/home/ray/autonomous_robot/install/myamr_localization:/home/ray/autonomous_robot/install/myamr_description:/home/ray/autonomous_robot/install/myamr_controller:/home/ray/autonomous_robot/install/myamr_utils:/home/ray/autonomous_robot/install/myamr_bringup:/home/ray/turtlebot3_ws/install/turtlebot3:/home/ray/turtlebot3_ws/install/turtlebot3_simulations:/home/ray/turtlebot3_ws/install/turtlebot3_bringup:/home/ray/turtlebot3_ws/install/turtlebot3_node:/home/ray/turtlebot3_ws/install/turtlebot3_navigation2:/home/ray/turtlebot3_ws/install/turtlebot3_gazebo:/home/ray/turtlebot3_ws/install/turtlebot3_fake_node:/home/ray/turtlebot3_ws/install/turtlebot3_description:/home/ray/turtlebot3_ws/install/turtlebot3_cartographer:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_bringup -- -j8 -l8
+[1.166s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_bringup' returned '0': CMAKE_PREFIX_PATH=/home/ray/autonomous_robot/install/myamr_mapping:/home/ray/autonomous_robot/install/myamr_localization:/home/ray/autonomous_robot/install/myamr_description:/home/ray/autonomous_robot/install/myamr_controller:/home/ray/autonomous_robot/install/myamr_utils:/home/ray/autonomous_robot/install/myamr_bringup:/home/ray/turtlebot3_ws/install/turtlebot3:/home/ray/turtlebot3_ws/install/turtlebot3_simulations:/home/ray/turtlebot3_ws/install/turtlebot3_bringup:/home/ray/turtlebot3_ws/install/turtlebot3_node:/home/ray/turtlebot3_ws/install/turtlebot3_navigation2:/home/ray/turtlebot3_ws/install/turtlebot3_gazebo:/home/ray/turtlebot3_ws/install/turtlebot3_fake_node:/home/ray/turtlebot3_ws/install/turtlebot3_description:/home/ray/turtlebot3_ws/install/turtlebot3_cartographer:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_bringup -- -j8 -l8
+[1.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_bringup': CMAKE_PREFIX_PATH=/home/ray/autonomous_robot/install/myamr_mapping:/home/ray/autonomous_robot/install/myamr_localization:/home/ray/autonomous_robot/install/myamr_description:/home/ray/autonomous_robot/install/myamr_controller:/home/ray/autonomous_robot/install/myamr_utils:/home/ray/autonomous_robot/install/myamr_bringup:/home/ray/turtlebot3_ws/install/turtlebot3:/home/ray/turtlebot3_ws/install/turtlebot3_simulations:/home/ray/turtlebot3_ws/install/turtlebot3_bringup:/home/ray/turtlebot3_ws/install/turtlebot3_node:/home/ray/turtlebot3_ws/install/turtlebot3_navigation2:/home/ray/turtlebot3_ws/install/turtlebot3_gazebo:/home/ray/turtlebot3_ws/install/turtlebot3_fake_node:/home/ray/turtlebot3_ws/install/turtlebot3_description:/home/ray/turtlebot3_ws/install/turtlebot3_cartographer:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_bringup
+[1.175s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_bringup)
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup' for CMake module files
+[1.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_bringup' returned '0': CMAKE_PREFIX_PATH=/home/ray/autonomous_robot/install/myamr_mapping:/home/ray/autonomous_robot/install/myamr_localization:/home/ray/autonomous_robot/install/myamr_description:/home/ray/autonomous_robot/install/myamr_controller:/home/ray/autonomous_robot/install/myamr_utils:/home/ray/autonomous_robot/install/myamr_bringup:/home/ray/turtlebot3_ws/install/turtlebot3:/home/ray/turtlebot3_ws/install/turtlebot3_simulations:/home/ray/turtlebot3_ws/install/turtlebot3_bringup:/home/ray/turtlebot3_ws/install/turtlebot3_node:/home/ray/turtlebot3_ws/install/turtlebot3_navigation2:/home/ray/turtlebot3_ws/install/turtlebot3_gazebo:/home/ray/turtlebot3_ws/install/turtlebot3_fake_node:/home/ray/turtlebot3_ws/install/turtlebot3_description:/home/ray/turtlebot3_ws/install/turtlebot3_cartographer:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_bringup
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup' for CMake config files
+[1.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_bringup', 'cmake_prefix_path')
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/hook/cmake_prefix_path.ps1'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/hook/cmake_prefix_path.dsv'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/hook/cmake_prefix_path.sh'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/bin'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/lib/pkgconfig/myamr_bringup.pc'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/lib/python3.10/site-packages'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/bin'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.ps1'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.dsv'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.sh'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.bash'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.zsh'
+[1.181s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_bringup/share/colcon-core/packages/myamr_bringup)
+[1.181s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_bringup)
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup' for CMake module files
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup' for CMake config files
+[1.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_bringup', 'cmake_prefix_path')
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/hook/cmake_prefix_path.ps1'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/hook/cmake_prefix_path.dsv'
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/hook/cmake_prefix_path.sh'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/bin'
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/lib/pkgconfig/myamr_bringup.pc'
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/lib/python3.10/site-packages'
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_bringup/bin'
+[1.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.ps1'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.dsv'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.sh'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.bash'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_bringup/share/myamr_bringup/package.zsh'
+[1.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_bringup/share/colcon-core/packages/myamr_bringup)
+[1.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/myamr_planning': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_planning build --build-base /home/ray/autonomous_robot/build/myamr_planning/build install --record /home/ray/autonomous_robot/build/myamr_planning/install.log --single-version-externally-managed install_data
+[1.621s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning' for CMake module files
+[1.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/myamr_planning' returned '0': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_planning build --build-base /home/ray/autonomous_robot/build/myamr_planning/build install --record /home/ray/autonomous_robot/build/myamr_planning/install.log --single-version-externally-managed install_data
+[1.621s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning' for CMake config files
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning/lib'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning/bin'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning/lib/pkgconfig/myamr_planning.pc'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning/lib/python3.10/site-packages'
+[1.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_planning', 'pythonpath')
+[1.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/hook/pythonpath.ps1'
+[1.623s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/hook/pythonpath.dsv'
+[1.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/hook/pythonpath.sh'
+[1.624s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_planning/bin'
+[1.624s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_planning)
+[1.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/package.ps1'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/package.dsv'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/package.sh'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/package.bash'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_planning/share/myamr_planning/package.zsh'
+[1.625s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_planning/share/colcon-core/packages/myamr_planning)
+[1.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --build /home/ray/autonomous_robot/build/myamr_utils -- -j8 -l8
+[1.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ray/autonomous_robot/build/myamr_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_utils
+[1.914s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_utils)
+[1.915s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils' for CMake module files
+[1.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ray/autonomous_robot/build/myamr_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ray/autonomous_robot/install/myamr_planning:/home/ray/autonomous_tb3_ws/install/autonomous_tb3:/home/ray/turtlebot3_ws/install/turtlebot3_teleop:/home/ray/turtlebot3_ws/install/turtlebot3_example:/home/ray/turtlebot3_ws/install/my_robot_test:/home/ray/autonomous_tb3_ws/src/install/autonomous_tb3:/opt/ros/humble /usr/bin/cmake --install /home/ray/autonomous_robot/build/myamr_utils
+[1.916s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils' for CMake config files
+[1.916s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_utils', 'cmake_prefix_path')
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/hook/cmake_prefix_path.ps1'
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/hook/cmake_prefix_path.dsv'
+[1.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/hook/cmake_prefix_path.sh'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/lib'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/bin'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/lib/pkgconfig/myamr_utils.pc'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/lib/python3.10/site-packages'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/bin'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.ps1'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.dsv'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.sh'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.bash'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.zsh'
+[1.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_utils/share/colcon-core/packages/myamr_utils)
+[1.919s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myamr_utils)
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils' for CMake module files
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils' for CMake config files
+[1.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('myamr_utils', 'cmake_prefix_path')
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/hook/cmake_prefix_path.ps1'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/hook/cmake_prefix_path.dsv'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/hook/cmake_prefix_path.sh'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/lib'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/bin'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/lib/pkgconfig/myamr_utils.pc'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/lib/python3.10/site-packages'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/ray/autonomous_robot/install/myamr_utils/bin'
+[1.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.ps1'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.dsv'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.sh'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.bash'
+[1.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/ray/autonomous_robot/install/myamr_utils/share/myamr_utils/package.zsh'
+[1.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ray/autonomous_robot/install/myamr_utils/share/colcon-core/packages/myamr_utils)
+[1.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.923s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.932s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.932s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.932s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.948s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.949s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ray/autonomous_robot/install/local_setup.ps1'
+[1.950s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ray/autonomous_robot/install/_local_setup_util_ps1.py'
+[1.951s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ray/autonomous_robot/install/setup.ps1'
+[1.953s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ray/autonomous_robot/install/local_setup.sh'
+[1.953s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ray/autonomous_robot/install/_local_setup_util_sh.py'
+[1.954s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ray/autonomous_robot/install/setup.sh'
+[1.955s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ray/autonomous_robot/install/local_setup.bash'
+[1.955s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ray/autonomous_robot/install/setup.bash'
+[1.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ray/autonomous_robot/install/local_setup.zsh'
+[1.957s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ray/autonomous_robot/install/setup.zsh'

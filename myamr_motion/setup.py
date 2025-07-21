@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'pd_motion_planner = myamr_motion.pd_motion_planner:main'
         ],
     },
 )

@@ -9,6 +9,7 @@ setup.py
 ../build/myamr_motion/myamr_motion.egg-info/top_level.txt
 ../build/myamr_motion/myamr_motion.egg-info/zip-safe
 myamr_motion/__init__.py
+myamr_motion/pd_motion_planner.py
 resource/myamr_motion
 test/test_copyright.py
 test/test_flake8.py

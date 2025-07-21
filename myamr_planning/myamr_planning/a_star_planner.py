@@ -9,14 +9,15 @@ from tf2_ros import Buffer, TransformListener, LookupException
 from queue import PriorityQueue
 
 class GraphNode:
-    def __init__(self, x, y, cost=0, prev=None):
+    def __init__(self, x, y, cost=0, heuristic=0, prev=None):
         self.x = x
         self.y = y
         self.cost = cost
+        self.heuristic = heuristic
         self.prev = prev
     
     def __lt__(self, other):
-        return self.cost < other.cost
+        return (self.cost + self.heuristic) < (other.cost + other.heuristic)
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
@@ -27,9 +28,9 @@ class GraphNode:
     def __add__(self, other):
         return GraphNode(self.x + other[0], self.y + other[1])
 
-class DijkstraPlanner(Node):
+class AStarPlanner(Node):
     def __init__(self):
-        super().__init__("dijkstra_node")
+        super().__init__("a_star_node")
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
@@ -37,13 +38,13 @@ class DijkstraPlanner(Node):
         map_qos.durability = DurabilityPolicy.TRANSIENT_LOCAL
 
         self.map_sub = self.create_subscription(
-            OccupancyGrid, "/map", self.map_callback, map_qos
+            OccupancyGrid, "/costmap", self.map_callback, map_qos
         )
         self.pose_sub = self.create_subscription(
             PoseStamped, "/goal_pose", self.goal_callback, 10
         )
-        self.path_pub = self.create_publisher(Path, "/dijkstra/path", 10)
-        self.map_pub = self.create_publisher(OccupancyGrid, "/dijkstra/visited_map", 10)
+        self.path_pub = self.create_publisher(Path, "/a_star/path", 10)
+        self.map_pub = self.create_publisher(OccupancyGrid, "/a_star/visited_map", 10)
 
         self.map_ = None
         self.visited_map_ = OccupancyGrid()
@@ -90,13 +91,15 @@ class DijkstraPlanner(Node):
         visited_nodes = set()
 
         start_node = self.world_to_grid(start)
+        goal_node = self.world_to_grid(goal)
+        start_node.heuristic = self.manhattan_distance(start_node, goal_node)
         pending_nodes.put(start_node)
 
         while not pending_nodes.empty() and rclpy.ok():
             active_node = pending_nodes.get()
 
             # Goal found!
-            if active_node == self.world_to_grid(goal):
+            if active_node == goal_node:
                 break
             
             # Explore neighbors
@@ -104,15 +107,16 @@ class DijkstraPlanner(Node):
                 new_node: GraphNode = active_node + (dir_x, dir_y)
                 
                 if (new_node not in visited_nodes and self.pose_on_map(new_node) and 
-                    self.map_.data[self.pose_to_cell(new_node)] == 0):
+                    0 <= self.map_.data[self.pose_to_cell(new_node)] < 99):
                     
-                    new_node.cost = active_node.cost + 1
+                    new_node.cost = active_node.cost + 1 + self.map_.data[self.pose_to_cell(new_node)]
+                    new_node.heuristic = self.manhattan_distance(new_node, goal_node)
                     new_node.prev = active_node
 
                     pending_nodes.put(new_node)
                     visited_nodes.add(new_node)
 
-            self.visited_map_.data[self.pose_to_cell(active_node)] = 10 # Blue
+            self.visited_map_.data[self.pose_to_cell(active_node)] = -106
             self.map_pub.publish(self.visited_map_)
 
         path = Path()
@@ -127,6 +131,9 @@ class DijkstraPlanner(Node):
 
         path.poses.reverse()
         return path
+
+    def manhattan_distance(self, node: GraphNode, goal_node: GraphNode):
+        return abs(node.x - goal_node.x) + abs(node.y - goal_node.y)
 
     def pose_on_map(self, node: GraphNode):
         return 0 <= node.x < self.map_.info.width and 0 <= node.y < self.map_.info.height
@@ -148,7 +155,7 @@ class DijkstraPlanner(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = DijkstraPlanner()
+    node = AStarPlanner()
     rclpy.spin(node)
     rclpy.shutdown()
 

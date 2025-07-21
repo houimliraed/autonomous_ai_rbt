@@ -1,0 +1,24 @@
+[2.561s] Invoking command in '/home/ray/autonomous_robot/myamr_motion': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_motion build --build-base /home/ray/autonomous_robot/build/myamr_motion/build install --record /home/ray/autonomous_robot/build/myamr_motion/install.log --single-version-externally-managed install_data
+[3.262s] running egg_info
+[3.265s] writing ../build/myamr_motion/myamr_motion.egg-info/PKG-INFO
+[3.265s] writing dependency_links to ../build/myamr_motion/myamr_motion.egg-info/dependency_links.txt
+[3.265s] writing entry points to ../build/myamr_motion/myamr_motion.egg-info/entry_points.txt
+[3.265s] writing requirements to ../build/myamr_motion/myamr_motion.egg-info/requires.txt
+[3.265s] writing top-level names to ../build/myamr_motion/myamr_motion.egg-info/top_level.txt
+[3.273s] reading manifest file '../build/myamr_motion/myamr_motion.egg-info/SOURCES.txt'
+[3.273s] writing manifest file '../build/myamr_motion/myamr_motion.egg-info/SOURCES.txt'
+[3.273s] running build
+[3.273s] running build_py
+[3.273s] copying myamr_motion/pd_motion_planner.py -> /home/ray/autonomous_robot/build/myamr_motion/build/lib/myamr_motion
+[3.273s] running install
+[3.274s] running install_lib
+[3.274s] copying /home/ray/autonomous_robot/build/myamr_motion/build/lib/myamr_motion/pd_motion_planner.py -> /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion
+[3.275s] byte-compiling /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion/pd_motion_planner.py to pd_motion_planner.cpython-310.pyc
+[3.279s] running install_data
+[3.279s] running install_egg_info
+[3.286s] removing '/home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion-0.0.0-py3.10.egg-info' (and everything under it)
+[3.286s] Copying ../build/myamr_motion/myamr_motion.egg-info to /home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages/myamr_motion-0.0.0-py3.10.egg-info
+[3.286s] running install_scripts
+[3.332s] Installing pd_motion_planner script to /home/ray/autonomous_robot/install/myamr_motion/lib/myamr_motion
+[3.332s] writing list of installed files to '/home/ray/autonomous_robot/build/myamr_motion/install.log'
+[3.422s] Invoked command in '/home/ray/autonomous_robot/myamr_motion' returned '0': PYTHONPATH=/home/ray/autonomous_robot/build/myamr_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ray/autonomous_robot/install/myamr_motion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/myamr_motion build --build-base /home/ray/autonomous_robot/build/myamr_motion/build install --record /home/ray/autonomous_robot/build/myamr_motion/install.log --single-version-externally-managed install_data

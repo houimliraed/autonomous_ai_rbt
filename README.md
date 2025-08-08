@@ -6,8 +6,17 @@ An autonomous mobile robot (AMR) built with ROS 2 Humble for indoor navigation u
 
 ## 📹 Video Demo
 
-<!-- Add your video demo here -->
-*Video demo will be available soon*
+Watch AutonomBot in action with autonomous navigation, obstacle avoidance, and path planning:
+
+[![AutonomBot Demo](https://img.shields.io/badge/▶️-Watch%20Demo-red?style=for-the-badge)](media/autonombot_demo.webm)
+
+> **Demo Features:**
+> - Autonomous navigation in simulated environment
+> - Real-time obstacle detection and avoidance
+> - Dynamic path planning and re-routing
+> - Multi-sensor fusion (LiDAR + Camera + Ultrasonic)
+
+*Click the badge above to download and view the demo video (3.6MB)*
 
 ## Features
 

@@ -93,5 +93,17 @@ docs/doxygen/
 *.log
 system_performance_report_*.json
 
+# AI-generated documentation files (exclude these)
+AUTONOMBOT_TECHNICAL_REPORT.md
+CONTRIBUTING.md
+DEPLOYMENT_READY_REPORT.md
+JETSON_DEPLOYMENT_CHECKLIST.md
+PROJECT_ANALYSIS.md
+prepare_github.sh
+setup_github.sh
+validate_deployment.sh
+.pre-commit-config.yaml
+pyproject.toml
+
 # Hardware-specific files
 .rviz_*

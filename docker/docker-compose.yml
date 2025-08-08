@@ -18,6 +18,11 @@ services:
       - ../maps:/workspace/maps:rw
     networks:
       - autonombot-net
+    healthcheck:
+      test: ["CMD", "ros2", "node", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     command: ros2 launch autonombot_launch simulated_robot.launch.py
     
   autonombot-real:

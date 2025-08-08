@@ -5,6 +5,7 @@ FROM osrf/ros:humble-desktop-full
 ENV DEBIAN_FRONTEND=noninteractive
 ENV ROS_DISTRO=humble
 ENV WORKSPACE=/workspace
+ENV PYTHONUNBUFFERED=1
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -20,7 +21,8 @@ RUN apt-get update && apt-get install -y \
     usbutils \
     python3-serial \
     python3-colcon-common-extensions \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 
 # Install ROS 2 dependencies
 RUN apt-get update && apt-get install -y \
@@ -34,12 +36,13 @@ RUN apt-get update && apt-get install -y \
     ros-humble-hardware-interface \
     ros-humble-realsense2-camera \
     ros-humble-rplidar-ros \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 
 # Create workspace
 WORKDIR $WORKSPACE
 
-# Copy source code
+# Copy source code (excluding build artifacts via .dockerignore)
 COPY src/ src/
 
 # Install Python dependencies

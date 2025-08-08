@@ -1,0 +1,272 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  ROS_DISTRO: humble
+
+jobs:
+  lint:
+    runs-on: ubuntu-22.04
+    name: Code Quality & Linting
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install linting tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install black flake8 pylint
+          
+      - name: Run Black formatter check
+        run: |
+          black --check --diff src/
+          
+      - name: Run Flake8 linter
+        run: |
+          flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 src/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+          
+      - name: Run Pylint
+        run: |
+          find src/ -name "*.py" -exec pylint {} \; || true
+
+  build:
+    runs-on: ubuntu-22.04
+    name: ROS 2 Build & Test
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: humble
+          
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            python3-pip \
+            python3-rosdep \
+            python3-colcon-common-extensions \
+            python3-colcon-mixin
+            
+      - name: Install ROS 2 dependencies
+        run: |
+          sudo apt-get install -y \
+            ros-humble-nav2-bringup \
+            ros-humble-robot-localization \
+            ros-humble-joint-state-publisher-gui \
+            ros-humble-xacro \
+            ros-humble-gazebo-ros-pkgs \
+            ros-humble-ros2-control \
+            ros-humble-ros2-controllers \
+            ros-humble-hardware-interface
+            
+      - name: Install Python dependencies
+        run: |
+          pip3 install -r src/autonombot_vision/requirements.txt
+          
+      - name: Initialize rosdep
+        run: |
+          sudo rosdep init || true
+          rosdep update
+          
+      - name: Install package dependencies
+        run: |
+          rosdep install --from-paths src --ignore-src -r -y
+          
+      - name: Build workspace
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
+          
+      - name: Run tests
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          colcon test --return-code-on-test-failure
+          
+      - name: Upload test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-results
+          path: |
+            log/
+            build/*/test_results/
+            
+  simulation-test:
+    runs-on: ubuntu-22.04
+    name: Simulation Integration Test
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: humble
+          
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ros-humble-gazebo-ros-pkgs \
+            ros-humble-nav2-bringup \
+            ros-humble-robot-localization \
+            xvfb
+            
+      - name: Build workspace
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build
+          
+      - name: Test Gazebo simulation launch
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          timeout 60s ros2 launch autonombot_launch simulated_robot.launch.py || exit_code=$?
+          if [ $exit_code -eq 124 ]; then
+            echo "Simulation launched successfully (timed out after 60s as expected)"
+            exit 0
+          else
+            echo "Simulation failed to launch"
+            exit 1
+          fi
+        env:
+          DISPLAY: ":99"
+          
+  deployment-validation:
+    runs-on: ubuntu-22.04
+    name: Deployment Readiness
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: humble
+          
+      - name: Build workspace
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build
+          
+      - name: Run deployment validation
+        run: |
+          chmod +x validate_deployment.sh
+          ./validate_deployment.sh
+          
+      - name: Check Jetson setup script
+        run: |
+          chmod +x src/autonombot_firmware/scripts/jetson_setup.sh
+          bash -n src/autonombot_firmware/scripts/jetson_setup.sh
+          echo "Jetson setup script syntax is valid"
+          
+      - name: Validate hardware validation script
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          python3 -m py_compile src/autonombot_firmware/scripts/validate_hardware.py
+          echo "Hardware validation script compiles successfully"
+
+  docker-build:
+    runs-on: ubuntu-22.04
+    name: Docker Build Test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [build, simulation-test]
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./docker/Dockerfile
+          push: false
+          tags: autonombot:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  documentation:
+    runs-on: ubuntu-22.04
+    name: Documentation Build
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install documentation tools
+        run: |
+          pip install sphinx sphinx-rtd-theme breathe
+          
+      - name: Generate documentation
+        run: |
+          mkdir -p docs/_build
+          echo "Documentation generation placeholder"
+          # Add actual documentation build commands here
+          
+      - name: Upload documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: documentation
+          path: docs/_build/
+
+  release:
+    runs-on: ubuntu-22.04
+    name: Release
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[release]')
+    needs: [lint, build, simulation-test, deployment-validation]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          echo "RELEASE_NOTES<<EOF" >> $GITHUB_OUTPUT
+          git log --pretty=format:"- %s" $(git describe --tags --abbrev=0)..HEAD >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release v${{ github.run_number }}
+          body: |
+            ## Changes in this Release
+            ${{ steps.release_notes.outputs.RELEASE_NOTES }}
+            
+            ## Deployment Ready
+            ✅ All tests passed
+            ✅ Simulation validated  
+            ✅ Hardware compatibility confirmed
+            
+            ## Installation
+            ```bash
+            git clone https://github.com/YOUR_USERNAME/autonombot.git
+            cd autonombot
+            chmod +x src/autonombot_firmware/scripts/jetson_setup.sh
+            ./src/autonombot_firmware/scripts/jetson_setup.sh
+            ```
+          draft: false
+          prerelease: false

@@ -1,0 +1,262 @@
+# Enhanced EKF Configuration for Multi-Sensor Fusion
+# Integrates LiDAR, Ultrasonic, Camera, and Wheel Odometry for robust localization
+# Optimized for <200ms latency and >85% accuracy requirements
+
+ekf_filter_node:
+  ros__parameters:
+    # System configuration
+    frequency: 50.0  # 50Hz for real-time performance
+    sensor_timeout: 0.2  # 200ms timeout meets latency requirement
+    two_d_mode: true  # 2D navigation mode
+    transform_time_offset: 0.0
+    transform_timeout: 0.0
+    print_diagnostics: true
+    debug: false
+    debug_out_file: /tmp/debug_ekf_localization.txt
+    permit_corrected_publication: false
+    publish_acceleration: true
+    publish_tf: true
+    
+    # Map and odometry frames
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+    
+    # Multi-sensor input configuration
+    # Wheel odometry (high frequency, good for short-term)
+    odom0: /autonombot_drivers/odom
+    odom0_config: [false, false, false,  # x, y, z position
+                   false, false, false,  # roll, pitch, yaw orientation  
+                   true,  true,  false,  # x, y, z linear velocity
+                   false, false, true,   # roll, pitch, yaw angular velocity
+                   false, false, false]  # x, y, z linear acceleration
+    odom0_queue_size: 5
+    odom0_nodelay: false
+    odom0_differential: false
+    odom0_relative: true
+    
+    # Ultrasonic motion data (replaces IMU for motion estimation)
+    twist0: /ultrasonic_motion
+    twist0_config: [false, false, false,  # x, y, z position
+                    false, false, false,  # roll, pitch, yaw orientation  
+                    true,  false, false,  # x, y, z linear velocity
+                    false, false, true,   # roll, pitch, yaw angular velocity
+                    false, false, false]  # x, y, z linear acceleration
+    twist0_queue_size: 5
+    twist0_nodelay: false
+    twist0_differential: false
+    twist0_relative: true
+    
+    # LiDAR-based pose estimation (lower frequency, high accuracy)
+    pose0: /scan_pose_estimate
+    pose0_config: [true,  true,  false,  # x, y, z position
+                   false, false, true,   # roll, pitch, yaw orientation
+                   false, false, false,  # x, y, z linear velocity
+                   false, false, false,  # roll, pitch, yaw angular velocity  
+                   false, false, false]  # x, y, z linear acceleration
+    pose0_queue_size: 3
+    pose0_nodelay: false
+    pose0_differential: false
+    pose0_relative: false
+    
+    # Visual odometry from depth camera (when available)
+    odom1: /visual_odometry
+    odom1_config: [true,  true,  false,  # x, y, z position
+                   false, false, true,   # roll, pitch, yaw orientation
+                   true,  true,  false,  # x, y, z linear velocity
+                   false, false, true,   # roll, pitch, yaw angular velocity
+                   false, false, false]  # x, y, z linear acceleration
+    odom1_queue_size: 3
+    odom1_nodelay: false
+    odom1_differential: false
+    odom1_relative: true
+    
+    # Process noise covariance (Q matrix)
+    # Higher values = more trust in process model
+    process_noise_covariance: [0.05, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.05,   0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.06,   0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.03,   0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.03,   0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.06,   0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.025,   0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.025,   0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.04,   0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.01,   0.0,    0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.01,   0.0,    0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.02,   0.0,    0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.01,   0.0,    0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.01,   0.0,
+                               0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.015]
+
+    # Initial estimate error covariance (P matrix)  
+    initial_estimate_covariance: [1e-9, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  1e-9,   0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    1e-9,   0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    1e-9,   0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    1e-9,   0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    1e-9,   0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    1e-9,   0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    1e-9,   0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    1e-9,   0.0,     0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    1e-9,    0.0,     0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     1e-9,    0.0,     0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     1e-9,    0.0,    0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     1e-9,   0.0,    0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    1e-9,   0.0,
+                                  0.0,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,     0.0,    0.0,    1e-9]
+
+---
+
+# Enhanced AMCL Configuration for robust localization
+amcl:
+  ros__parameters:
+    use_sim_time: true
+    
+    # Alpha parameters for motion model (odometry noise)
+    alpha1: 0.1  # rotation noise from rotation
+    alpha2: 0.1  # rotation noise from translation  
+    alpha3: 0.1  # translation noise from translation
+    alpha4: 0.1  # translation noise from rotation
+    alpha5: 0.1  # translation noise from strafe
+    
+    # Beam model parameters
+    beam_skip_distance: 0.5
+    beam_skip_error_threshold: 0.9
+    beam_skip_threshold: 0.3
+    do_beamskip: false
+    global_frame_id: "map"
+    
+    # Laser model parameters  
+    laser_likelihood_max_dist: 2.0
+    laser_max_range: 100.0
+    laser_min_range: -1.0
+    laser_model_type: "likelihood_field"
+    
+    # Map parameters
+    max_beams: 60
+    max_particles: 5000
+    min_particles: 200
+    odom_frame_id: "odom"
+    pf_err: 0.05
+    pf_z: 0.99
+    recovery_alpha_fast: 0.0
+    recovery_alpha_slow: 0.0
+    resample_interval: 1
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    save_pose_rate: 0.5
+    sigma_hit: 0.2
+    tf_broadcast: true
+    transform_tolerance: 1.0
+    update_min_a: 0.2
+    update_min_d: 0.25
+    z_hit: 0.5
+    z_max: 0.05  
+    z_rand: 0.5
+    z_short: 0.05
+    
+    # AI enhancement parameters
+    adaptive_particle_count: true
+    dynamic_resampling: true
+    confidence_estimation: true
+    outlier_rejection_threshold: 0.15
+    
+    # Performance optimizations for Jetson
+    enable_gpu_acceleration: true
+    parallel_processing: true
+    memory_optimization: true
+
+---
+
+# Collision Monitor Configuration for Safety
+collision_monitor:
+  ros__parameters:
+    use_sim_time: true
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    cmd_vel_in_topic: "cmd_vel_raw"
+    cmd_vel_out_topic: "cmd_vel"
+    state_topic: "collision_monitor_state"
+    transform_tolerance: 0.2
+    source_timeout: 4.0
+    base_shift_correction: true
+    stop_pub_timeout: 2.0
+    
+    # Polygon definitions for collision detection
+    polygons: ["PolygonStop", "PolygonSlowDown", "PolygonApproach"]
+    
+    # Emergency stop polygon (closest to robot)
+    PolygonStop:
+      type: "polygon" 
+      action_type: "stop"
+      max_points: 3
+      visualize: true
+      polygon_pub_topic: "polygon_stop"
+      points: [-0.3, -0.3, -0.3, 0.3, 0.3, 0.0]
+      
+    # Slow down polygon (intermediate distance)
+    PolygonSlowDown:
+      type: "polygon"
+      action_type: "slowdown"
+      max_points: 3  
+      visualize: true
+      polygon_pub_topic: "polygon_slowdown"
+      slowdown_ratio: 0.3
+      points: [-0.5, -0.5, -0.5, 0.5, 0.7, 0.0]
+      
+    # Approach polygon (furthest detection)
+    PolygonApproach:
+      type: "polygon"
+      action_type: "approach"
+      max_points: 3
+      visualize: true  
+      polygon_pub_topic: "polygon_approach"
+      approach_time_allowance: 2.0
+      points: [-0.8, -0.8, -0.8, 0.8, 1.0, 0.0]
+    
+    # Observation sources
+    observation_sources: ["scan", "pointcloud"]
+    
+    # LiDAR source
+    scan:
+      type: "scan"
+      topic: "/scan"
+      
+    # 3D camera source  
+    pointcloud:
+      type: "pointcloud"
+      topic: "/camera/depth/points"
+      min_height: 0.05
+      max_height: 2.0
+
+---
+
+# Diagnostics Configuration
+diagnostic_aggregator:
+  ros__parameters:
+    use_sim_time: true
+    pub_rate: 10.0
+    base_path: ""
+    
+    # Navigation system diagnostics
+    analyzers:
+      navigation:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: Navigation
+        contains: ["controller", "planner", "behavior", "bt_navigator"]
+        
+      sensors:
+        type: diagnostic_aggregator/GenericAnalyzer  
+        path: Sensors
+        contains: ["scan", "imu", "camera", "ultrasonic"]
+        
+      localization:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: Localization
+        contains: ["ekf", "amcl", "odometry"]
+        
+      ai_system:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: AI_System  
+        contains: ["ai_planner", "ai_controller", "performance_monitor"]

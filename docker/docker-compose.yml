@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  autonombot-sim:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: autonombot:latest
+    container_name: autonombot-simulation
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ../src:/workspace/src:ro
+      - ../maps:/workspace/maps:rw
+    networks:
+      - autonombot-net
+    command: ros2 launch autonombot_launch simulated_robot.launch.py
+    
+  autonombot-real:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: autonombot:latest
+    container_name: autonombot-hardware
+    privileged: true
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - /dev:/dev
+      - ../src:/workspace/src:ro
+      - ../maps:/workspace/maps:rw
+    networks:
+      - autonombot-net
+    command: ros2 launch autonombot_launch real_robot.launch.py
+    
+  rviz:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: autonombot:latest
+    container_name: autonombot-rviz
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    networks:
+      - autonombot-net
+    command: ros2 run rviz2 rviz2 -d /workspace/src/autonombot_launch/rviz/autonombot_simulation.rviz
+    depends_on:
+      - autonombot-sim
+
+networks:
+  autonombot-net:
+    driver: bridge

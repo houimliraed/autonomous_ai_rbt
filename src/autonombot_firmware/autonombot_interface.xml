@@ -1,0 +1,10 @@
+<library path="autonombot_firmware">
+    <class name="autonombot_firmware/AutonomBotInterface"
+      type="autonombot_firmware::AutonomBotInterface"
+      base_class_type="hardware_interface::SystemInterface"
+    >
+      <description>
+        AutonomBot Hardware Interface for real robot deployment
+      </description>
+    </class>
+</library>

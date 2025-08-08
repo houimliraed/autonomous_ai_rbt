@@ -1,0 +1,52 @@
+<root main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <RecoveryNode number_of_retries="8" name="NavigateRecovery">
+            <PipelineSequence name="NavigateWithReplanning">
+                <RateController hz="1.0">
+                    <RecoveryNode number_of_retries="3" name="PlannerRecovery">
+                        <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+                        <Sequence name="PlannerRecoveryActions">
+                            <Wait wait_duration="1.0"/>
+                            <Wait wait_duration="0.5"/>
+                        </Sequence>
+                    </RecoveryNode>
+                </RateController>
+                <FollowPath path="{path}" controller_id="FollowPath"/>
+            </PipelineSequence>
+            <Sequence name="RobustRecoveryActions">
+                <!-- Strategy 1: Immediate sensor reset (only clear local costmap) -->
+                <Wait wait_duration="1.5"/>
+
+                <!-- Strategy 2: Try simple backup without collision checking -->
+                <RecoveryNode number_of_retries="1" name="BackupRecovery">
+                    <BackUp backup_dist="0.10" backup_speed="0.03"/>
+                    <Sequence name="EmergencyBackup">
+                        <Wait wait_duration="0.2"/>
+                    </Sequence>
+                </RecoveryNode>
+                <Wait wait_duration="0.5"/>
+
+                <!-- Strategy 3: Try gentle spin -->
+                <RecoveryNode number_of_retries="1" name="SpinRecovery">
+                    <Spin spin_dist="0.26"/>
+                    <Sequence name="EmergencySpin">
+                        <Wait wait_duration="0.3"/>
+                    </Sequence>
+                </RecoveryNode>
+                <Wait wait_duration="0.5"/>
+
+                <!-- Strategy 4: Larger movements -->
+                <Wait wait_duration="1.0"/>
+                <RecoveryNode number_of_retries="1" name="LargerBackup">
+                    <BackUp backup_dist="0.20" backup_speed="0.04"/>
+                    <Sequence name="FallbackBackup">
+                        <Wait wait_duration="0.5"/>
+                    </Sequence>
+                </RecoveryNode>
+
+                <!-- Strategy 5: Final recovery attempt -->
+                <Wait wait_duration="2.0"/>
+            </Sequence>
+        </RecoveryNode>
+    </BehaviorTree>
+</root>

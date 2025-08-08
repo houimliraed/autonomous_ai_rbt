@@ -16,7 +16,7 @@ Autonomous navigation, obstacle avoidance, and path planning:
 > - Dynamic path planning and re-routing
 > - Multi-sensor fusion (LiDAR + Camera + Ultrasonic)
 
-*High-quality version available: [Download WebM video](media/autonombot_demo.webm) (3.6MB)*
+*Video Demo available: [Download WebM video](media/autonombot_demo.webm)*
 
 ## Features
 

@@ -49,6 +49,8 @@ Watch AutonomBot in action with autonomous navigation, obstacle avoidance, and p
 2. **Launch simulation:**
    ```bash
    ros2 launch autonombot_launch simulated_robot.launch.py
+   For complete simulation use:
+   ros2 launch autonombot_launch simulated_robot.launch.py world_name:=small_house use_advanced_vision:=true
    ```
 
 3. **Open RViz for visualization:**

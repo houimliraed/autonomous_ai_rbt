@@ -1,247 +1,118 @@
-# 🤖 AutonomBot
+# AutonomBot - Autonomous Navigation Robot
 
-**An intelligent autonomous mobile robot built with ROS 2 for indoor navigation and obstacle avoidance**
+[![ROS 2 Build](https://github.com/houimliraed/autonomous_ai_rbt/workflows/ROS%202%20Build%20and%20Test/badge.svg)](https://github.com/houimliraed/autonomous_ai_rbt/actions)
 
-[![ROS 2](https://img.shields.io/badge/ROS_2-Humble-blue.svg)](https://docs.ros.org/en/humble/)
-[![Platform](https://img.shields.io/badge/Platform-Jetson_Xavier-green.svg)](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit)
-[![License](https://img.shields.io/badge/License-Apache_2.0-orange.svg)](LICENSE)
-[![Build Status](https://github.com/houimliraed/autonomous_ai_rbt/workflows/CI/badge.svg)](https://github.com/houimliraed/autonomous_ai_rbt/actions)
+An autonomous mobile robot (AMR) built with ROS 2 Humble for indoor navigation using LiDAR, camera vision, and ultrasonic sensors.
 
-## 🚀 Overview
+## 📹 Video Demo
 
-AutonomBot is a sophisticated autonomous mobile robot designed for indoor environments. It combines multiple sensors and advanced algorithms to navigate safely while avoiding obstacles in real-time.
+<!-- Add your video demo here -->
+*Video demo will be available soon*
 
-**Major Contributions & Enhancements:**
-- 🤖 **YOLOv8 Integration** - Custom object detection and obstacle avoidance
-- 🔧 **Jetson Xavier Optimization** - Performance-tuned for embedded deployment  
-- 🛠️ **Hardware Interface Development** - Custom firmware and sensor fusion
-- 📊 **System Validation** - Comprehensive testing and performance monitoring
-- 🗺️ **Navigation Enhancement** - Advanced behavior trees and path planning
+## Features
 
-### ✨ Key Features
+- **Autonomous Navigation**: Path planning and obstacle avoidance using Nav2
+- **Multi-Sensor Fusion**: LiDAR, RealSense camera, and ultrasonic sensors
+- **Computer Vision**: YOLOv8 object detection and recognition
+- **SLAM Mapping**: Real-time mapping and localization
+- **Hardware Support**: Optimized for NVIDIA Jetson Xavier AGX
 
-- 🧭 **Autonomous Navigation** - SLAM-based mapping and path planning
-- 👁️ **Multi-Sensor Fusion** - LiDAR, Camera, and Ultrasonic sensors
-- 🎯 **Obstacle Avoidance** - Real-time object detection with YOLOv8
-- 🗺️ **SLAM Mapping** - Simultaneous localization and mapping
-- 🔧 **Hardware Interface** - Direct motor control and sensor integration
-- 📊 **Real-time Monitoring** - System performance and sensor validation
+## Hardware Requirements
 
-## 🏗️ System Architecture
+- **Compute**: NVIDIA Jetson Xavier AGX or compatible
+- **LiDAR**: RPLiDAR A1/A2 or compatible
+- **Camera**: Intel RealSense D435i or D455
+- **Sensors**: Ultrasonic sensors for proximity detection
+- **Motors**: Differential drive system with encoders
 
-```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Sensors   │───▶│   Fusion    │───▶│ Navigation  │
-│ LiDAR+Cam+  │    │   Layer     │    │   Stack     │
-│ Ultrasonic  │    │             │    │             │
-└─────────────┘    └─────────────┘    └─────────────┘
-       │                   │                   │
-       ▼                   ▼                   ▼
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Vision    │    │   Mapping   │    │   Control   │
-│  Processing │    │    SLAM     │    │  Hardware   │
-│   YOLOv8    │    │   & Localization │ │  Interface  │
-└─────────────┘    └─────────────┘    └─────────────┘
-```
+## Quick Start
 
-## 📦 Package Structure
+### Simulation
 
-| Package | Description |
-|---------|-------------|
-| `autonombot_launch` | Launch files and system startup |
-| `autonombot_drivers` | Robot control and kinematics |
-| `autonombot_description` | URDF models and robot description |
-| `autonombot_firmware` | Hardware interfaces and drivers |
-| `autonombot_localization` | Localization algorithms |
-| `autonombot_mapping` | SLAM and map generation |
-| `autonombot_navigation` | Path planning and navigation |
-| `autonombot_vision` | Computer vision and object detection |
+1. **Clone and build the project:**
+   ```bash
+   git clone https://github.com/houimliraed/autonomous_ai_rbt.git
+   cd autonomous_ai_rbt
+   colcon build
+   source install/setup.bash
+   ```
 
-## 🛠️ Hardware Requirements
+2. **Launch simulation:**
+   ```bash
+   ros2 launch autonombot_launch simulated_robot.launch.py
+   ```
 
-- **Computer**: NVIDIA Jetson Xavier AGX (or compatible)
-- **LiDAR**: 360° scanning laser rangefinder
-- **Camera**: Intel RealSense or compatible RGB-D camera
-- **Sensors**: HC-SR04 ultrasonic sensors
-- **Motors**: Differential drive system
-- **Microcontroller**: Arduino for motor control
+3. **Open RViz for visualization:**
+   ```bash
+   rviz2 -d src/autonombot_launch/config/autonombot.rviz
+   ```
 
-## ⚡ Quick Start
+### Real Robot (Jetson Xavier)
 
-### 1. Prerequisites
+1. **Setup on Jetson:**
+   ```bash
+   # Install ROS 2 Humble
+   sudo apt update
+   sudo apt install ros-humble-desktop
+   
+   # Clone and build
+   git clone https://github.com/houimliraed/autonomous_ai_rbt.git
+   cd autonomous_ai_rbt
+   colcon build
+   source install/setup.bash
+   ```
 
+2. **Launch real robot:**
+   ```bash
+   ros2 launch autonombot_launch real_robot.launch.py
+   ```
+
+3. **Start navigation:**
+   ```bash
+   ros2 launch autonombot_navigation navigation.launch.py
+   ```
+
+## Package Structure
+
+- `autonombot_launch` - Launch files and configurations
+- `autonombot_drivers` - Hardware drivers and interfaces
+- `autonombot_description` - Robot URDF and simulation models
+- `autonombot_firmware` - Low-level hardware control
+- `autonombot_localization` - Localization and SLAM
+- `autonombot_mapping` - Map creation and management
+- `autonombot_navigation` - Path planning and navigation
+- `autonombot_planning` - High-level mission planning
+- `autonombot_vision` - Computer vision and object detection
+
+## Usage
+
+### Basic Navigation
+Send navigation goals through RViz or use the command line:
 ```bash
-# Install ROS 2 Humble
-sudo apt update && sudo apt install ros-humble-desktop
-
-# Install dependencies
-sudo apt install python3-colcon-common-extensions
-sudo apt install ros-humble-nav2-* ros-humble-slam-toolbox
-```
-
-### 2. Build the Project
-
-```bash
-```bash
-git clone https://github.com/houimliraed/autonomous_ai_rbt.git
-cd autonomous_ai_rbt
-```
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Build with colcon
-colcon build
-
-# Source the workspace
-source install/setup.bash
-```
-
-### 3. Launch the Robot
-
-```bash
-# Launch complete system
-ros2 launch autonombot_launch real_robot.launch.py
-
-# Launch simulation only
-ros2 launch autonombot_launch simulated_robot.launch.py
-```
-
-### 4. Validate Hardware
-
-```bash
-# Check sensor connectivity
-python3 src/autonombot_firmware/scripts/validate_hardware.py
-```
-
-## 🎮 Usage
-
-### Navigation Commands
-
-```bash
-# Start navigation
-ros2 launch autonombot_navigation navigation.launch.py
-
-# Set a goal pose
 ros2 topic pub /goal_pose geometry_msgs/PoseStamped "..."
 ```
 
+### Manual Control
+Control the robot manually during testing:
+```bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+
 ### Mapping
-
+Create a new map of your environment:
 ```bash
-# Start SLAM mapping
 ros2 launch autonombot_mapping slam.launch.py
-
-# Save the map
-ros2 run nav2_map_server map_saver_cli -f my_map
 ```
 
-### Vision System
+## Dependencies
 
-```bash
-# Start object detection
-ros2 launch autonombot_vision vision.launch.py
+- ROS 2 Humble
+- Nav2 Navigation Stack
+- Gazebo Simulation
+- OpenCV 4.x
+- YOLOv8 (Ultralytics)
+- PCL (Point Cloud Library)
 
-# View detected obstacles
-ros2 topic echo /vision_obstacles
-```
+## License
 
-## 📊 System Performance
-
-- **Navigation Accuracy**: ±5cm positioning precision
-- **Obstacle Detection**: Real-time at 30 FPS
-- **Mapping Rate**: 10 Hz SLAM updates
-- **Response Time**: <100ms obstacle avoidance
-- **Battery Life**: 2-4 hours continuous operation
-
-## 🔧 Configuration
-
-Key configuration files:
-- `config/navigation_params.yaml` - Navigation parameters
-- `config/sensor_fusion.yaml` - Sensor fusion settings
-- `config/robot_description.yaml` - Robot physical parameters
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**LiDAR not detected:**
-```bash
-# Check USB connection
-lsusb | grep -i lidar
-
-# Check permissions
-sudo chmod 666 /dev/ttyUSB*
-```
-
-**Navigation not working:**
-```bash
-# Verify transforms
-ros2 run tf2_tools view_frames
-
-# Check topics
-ros2 topic list | grep nav
-```
-
-**Build failures:**
-```bash
-# Clean build
-rm -rf build/ install/ log/
-colcon build --symlink-install
-```
-
-## 📈 Development Status
-
-**Enhanced Features (by Ray):**
-- [x] **YOLOv8 Vision Integration** - Custom object detection pipeline
-- [x] **Jetson Xavier Optimization** - Performance tuning and deployment
-- [x] **Advanced Sensor Fusion** - Multi-sensor integration and validation
-- [x] **Enhanced Navigation** - Improved behavior trees and recovery strategies
-- [x] **Hardware Interface** - Custom firmware and motor control optimization
-- [x] **System Validation** - Comprehensive testing and monitoring framework
-
-**Foundation Framework (Antonio Brandi):**
-- [x] **Core Navigation** - ROS 2 Nav2 stack integration
-- [x] **SLAM Mapping** - Real-time map generation
-- [x] **Robot Description** - URDF modeling and basic kinematics
-- [x] **Package Structure** - Modular ROS 2 workspace organization
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-**Project Development:**
-- **Ray** - YOLOv8 integration, system optimization, and deployment enhancements
-- **Antonio Brandi** - Original project foundation, ROS 2 framework structure, and base navigation implementation
-
-**Technical Stack:**
-- ROS 2 Community for the robust robotics framework
-- Nav2 Team for the navigation stack foundation
-- Ultralytics for YOLOv8 object detection model
-- OpenCV for computer vision processing
-- NVIDIA for Jetson platform optimization and CUDA support
-
-**Academic Context:**
-This project builds upon Antonio Brandi's foundational ROS 2 autonomous robot implementation, with significant enhancements including custom vision integration, hardware optimization, sensor fusion improvements, and real-world validation for practical deployment.
-
----
-
-**🔗 Quick Links:**
-- [Technical Documentation](AUTONOMBOT_TECHNICAL_REPORT.md)
-- [System Diagrams](SYSTEM_DIAGRAMS.md)
-- [API Reference](docs/api/)
-- [Hardware Setup Guide](docs/hardware/)
-
----
-
-*Built with ❤️ for autonomous robotics*
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

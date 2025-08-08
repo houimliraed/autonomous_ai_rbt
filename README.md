@@ -6,7 +6,7 @@ An autonomous mobile robot (AMR) built with ROS 2 Humble for indoor navigation u
 
 ## 📹 Video Demo
 
-Watch AutonomBot in action with autonomous navigation, obstacle avoidance, and path planning:
+Autonomous navigation, obstacle avoidance, and path planning:
 
 ![AutonomBot Demo](media/autonombot_demo_fast.gif)
 

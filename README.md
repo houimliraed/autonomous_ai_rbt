@@ -1,6 +1,6 @@
 # AutonomBot - Autonomous Navigation Robot
 
-[![ROS 2 Build](https://github.com/houimliraed/autonomous_ai_rbt/workflows/ROS%202%20Build%20and%20Test/badge.svg)](https://github.com/houimliraed/autonomous_ai_rbt/actions)
+[![ROS 2 Build](https://github.com/houimliraed/autonomous_ai_rbt/workflows/ROS%202%20Build%20Check/badge.svg)](https://github.com/houimliraed/autonomous_ai_rbt/actions)
 
 An autonomous mobile robot (AMR) built with ROS 2 Humble for indoor navigation using LiDAR, camera vision, and ultrasonic sensors as a part of University Project. Thanks to the team for designing the hardware and thanks to AntoBrandi for the full ROS2 course.
 

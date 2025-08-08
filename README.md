@@ -115,4 +115,4 @@ ros2 launch autonombot_mapping slam.launch.py
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the Apache 2.0 License. See [LICENSE](LICENSE) for more information.

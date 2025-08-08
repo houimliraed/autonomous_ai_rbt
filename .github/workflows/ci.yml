@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: AutonomBot CI/CD - Autonomous AI Robot
 
 on:
   push:

@@ -5,7 +5,7 @@
 [![ROS 2](https://img.shields.io/badge/ROS_2-Humble-blue.svg)](https://docs.ros.org/en/humble/)
 [![Platform](https://img.shields.io/badge/Platform-Jetson_Xavier-green.svg)](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit)
 [![License](https://img.shields.io/badge/License-Apache_2.0-orange.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](build)
+[![Build Status](https://github.com/houimliraed/autonomous_ai_rbt/workflows/CI/badge.svg)](https://github.com/houimliraed/autonomous_ai_rbt/actions)
 
 ## 🚀 Overview
 
@@ -82,9 +82,10 @@ sudo apt install ros-humble-nav2-* ros-humble-slam-toolbox
 ### 2. Build the Project
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd autonombot_ws
+```bash
+git clone https://github.com/houimliraed/autonomous_ai_rbt.git
+cd autonomous_ai_rbt
+```
 
 # Install Python dependencies
 pip install -r requirements.txt

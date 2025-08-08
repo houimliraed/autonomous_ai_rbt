@@ -68,7 +68,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]
 
 # Labels for metadata
-LABEL maintainer="your-email@example.com"
-LABEL description="AutonomBot - Autonomous Navigation Robot"
+LABEL maintainer="houimliraed@engineergrid.com"
+LABEL description="AutonomBot - Autonomous Mobile Robot"
 LABEL version="1.0.0"
 LABEL ros.distro="humble"

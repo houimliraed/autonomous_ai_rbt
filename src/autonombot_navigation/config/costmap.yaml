@@ -26,7 +26,7 @@ costmap:
         raytrace_max_range: 3.0
         raytrace_min_range: 0.0
         obstacle_max_range: 2.5
-        obstacle_min_range: 0.0
+        obstacle_min_range: 0.05      # CRITICAL: Detect obstacles from 5cm minimum!
       ultrasonic:
         topic: /ultrasonic_range
         max_obstacle_height: 1.5
@@ -36,9 +36,9 @@ costmap:
         raytrace_max_range: 1.0
         raytrace_min_range: 0.0
         obstacle_max_range: 0.8
-        obstacle_min_range: 0.0
+        obstacle_min_range: 0.02      # CRITICAL: Ultrasonic detects from 2cm!
     inflation_layer:
       plugin: "nav2_costmap_2d::InflationLayer"
-      cost_scaling_factor: 4.0
-      inflation_radius: 0.8
+      cost_scaling_factor: 8.0        # Balanced - strong but not extreme
+      inflation_radius: 1.2           # Safe but allows path planning - back to reasonable
     always_send_full_costmap: True

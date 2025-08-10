@@ -166,8 +166,8 @@ local_costmap:
       # AI-enhanced inflation layer
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.5
-        inflation_radius: 0.35
+        cost_scaling_factor: 8.0        # Increased from 3.5 for stronger avoidance
+        inflation_radius: 1.5           # Increased from 0.35m to 1.5m for more safety
         inflate_unknown: false
         
       # AI prediction layer for dynamic obstacles
@@ -279,8 +279,8 @@ global_costmap:
       # Enhanced inflation with AI parameters
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 4.0
-        inflation_radius: 1.0
+        cost_scaling_factor: 8.0        # Increased from 4.0 for stronger avoidance
+        inflation_radius: 1.5           # Increased from 1.0m to 1.5m for more safety
         inflate_unknown: false
         
       # AI semantic understanding layer

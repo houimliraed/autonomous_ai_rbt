@@ -19,6 +19,7 @@ Panels:
     Expanded:
       - /2D Goal Pose1
       - /Publish Point1
+      - /nav2_rviz_plugins
     Name: Tool Properties
     Splitter Ratio: 0.5886790156364441
   - Class: rviz_common/Views

@@ -56,8 +56,8 @@ controller_server:
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 30.0        # Increased for more responsive obstacle detection
-      publish_frequency: 20.0       # Increased for better real-time updates
+      update_frequency: 50.0        # ENHANCED: Faster updates for moving obstacles (20ms cycle)
+      publish_frequency: 30.0       # Increased for better real-time tracking
       global_frame: odom
       robot_base_frame: base_link
       use_sim_time: true

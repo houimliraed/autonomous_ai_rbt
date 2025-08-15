@@ -131,7 +131,7 @@ local_costmap:
           raytrace_min_range: 0.0
           obstacle_max_range: 3.0
           obstacle_min_range: 0.0
-          observation_persistence: 0.1
+          observation_persistence: 0.05 # VERY SHORT: Quick clearing for moving obstacles
           expected_update_rate: 20.0
           
         # 3D Camera configuration
